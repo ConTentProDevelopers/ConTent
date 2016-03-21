@@ -1,0 +1,64 @@
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<table>
+    <tr>
+        <td class="user-menu">
+            <button>Twoje dane</button> 
+            <button>Dodaj pole namiotowe</button>
+            <button>Pola namiotowe</button>
+            <button>Wyloguj</button>
+        </td>
+        <td class="user-content">
+            <div style="float:left;margin:20px">
+                <form>
+                    <h3>Nazwa pola</h3>
+                    <input  type="text" name="name">
+                    <h3>Miejscowość</h3>
+                    <input type="text" name="city">
+                    <h3>Adres</h3>
+                    <input type="text" name="address">
+                </form>
+            </div>
+            
+            <div style="float:left;margin:20px">
+                <form>
+                    <h3>Strona www</h3>
+                    <input  type="text" name="url">
+                    <h3>Email</h3>
+                    <input type="text" name="email">
+                    <h3>Telefon</h3>
+                    <input type="text" name="phone">
+                </form>
+            </div>
+            
+            <div style="float:left;margin:20px">
+                <form>
+                    <h3>Miejsca namiotowe</h3>
+                    <input type="number" name="quantity" min="1">
+                    <h3>Miejsca campingowe</h3>
+                    <input type="number" name="quantity" min="0">
+                    <h3>Udogodnienia</h3>
+                    <input type="checkbox" name="diner" value="yes"> Stołówka<br>
+                    <input type="checkbox" name="diner" value="yes"> Wifi<br>
+                    <input type="checkbox" name="diner" value="yes"> Przysznic<br>
+                </form>
+            </div>
+            
+            <div style="float:left;margin:20px">
+                <form>
+                    <h3>Opis</h3>
+                    <textarea rows="4" cols="100">Opis</textarea>
+                    <h3>Zdjecie</h3>
+                    <input type="file">
+                    <br>
+                    <button>Dodaj</button>
+                </form>
+            </div>
+            
+            
+        </td>
+        
+    </tr>
+</table>

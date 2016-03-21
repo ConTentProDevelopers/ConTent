@@ -1,0 +1,218 @@
+/* ConTent Stylesheet v0.1.18032016 */
+
+.header{
+    border: 1px solid black;
+    height: 100px;  
+    width: 100%;
+    align-items: center;
+    vertical-align: top; 
+}
+
+.footer{
+    border: 1px solid black;
+    height: 20px;  
+    width: 100%;
+    align-items: center;
+    vertical-align: top; 
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-align:center;
+}
+
+.placeholder {
+    width: 80;
+    height: 80;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('images/placeholder.jpg');
+    display: inline-block;
+    float: left;
+    margin: 10px 10px 10px 10px;
+}
+
+.searchInput{
+    font-size: 13px;
+    color: darkgrey;
+    float: left;
+    padding: 15px;
+    border: solid 3px #ccc;
+}
+
+.searchButton{
+    background-color: #fff;
+    border: 2px solid black;
+    float:left;
+    color: black;
+    padding: 15px 30px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.carousel{
+    display: table;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.carousel-body{
+    display: table-row;
+    
+}
+
+.carousel-item{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.carousel-item h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+.divstatic{
+    align-content: center;
+    text-align: center;
+    
+}
+.divstatic h2{
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.divstatic p{
+    font-size: 15px;
+}
+
+.postSearch-menu{
+    width: 250px;
+    margin-left: 30px;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.postSearch-menu ul{
+    padding-left: 10px;
+}
+.postSearch-menu select{
+    padding-left: 10px;
+    width: 100%;
+}
+.postSearch-menu ul li{
+    font-size: 15px;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.results{
+    display: table;
+    border: 1px solid black;
+}
+
+.results-body{
+    display: table-row;
+}
+
+.results-item {
+    display: table-cell;
+    float: left;
+    margin: 0px 10px 10px 20px;
+}
+
+.results-item p{
+    text-align: center;
+    font-size: 14px;
+    display: table-cell;
+    width: 148;
+}
+
+.login{
+    padding: 20px;
+    width: 100%;
+}
+
+.login td{
+    width: 50%;
+}
+
+h3{
+    margin-bottom: 5px;
+}
+
+button{
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
+
+.user-menu {
+    border: 1px solid black;
+    vertical-align: top;
+    width: 200px;
+}
+
+.user-menu button{
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+}
+
+.user-content {
+
+    border: 1px solid black;
+    vertical-align: top;
+    width: 100%;
+}
+
+.user-content li{
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    padding: 15px;
+    margin: 20px;
+    font-size: 20px;
+    list-style-type:none;
+}
+
+.user-content button{
+    background-color: #fff;
+    border: 2px solid black;
+    float: right;
+    margin: 10px;
+    color: black;
+    padding: 5px 20px;
+    margin: 0px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
