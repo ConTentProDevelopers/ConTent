@@ -21,6 +21,11 @@
 a {
     text-decoration: none;
     color: black;
+    
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 h1{
@@ -160,7 +165,6 @@ button{
     text-align: center;
     margin: 20px;
 }
-
 .user-menu {
     border: 1px solid black;
     vertical-align: top;
@@ -178,11 +182,23 @@ button{
     margin: 5px;
 }
 
+.user-menu button:hover{
+    background-color: #000;
+    color: white;
+    
+}
+
 .user-content {
 
     border: 1px solid black;
     vertical-align: top;
     width: 100%;
+}
+
+.user-content ul{
+    margin-left: 0px;
+    padding: 0px;
+    
 }
 
 .user-content li{
@@ -205,6 +221,41 @@ button{
     margin: 0px 10px;
     font-size: 14px;
     text-align: center;
+}
+
+.user-content button:hover{
+    background-color: #000;
+    color: white;
+}
+
+.register-info{
+    font-size: 12px;
+    margin-top: 20px;
+    width: 300px;
+    border: 1px dotted black;
+}
+
+.conformation {
+    border: 1px solid black;
+    width: 100%
+}
+
+.conformation tr{
+    width: 50%;
+    font-size: 20px;
+}
+.conformation td{
+    width: 30%;
+    font-size: 20px;
+    border: 0px;
+}
+
+.conformation-div{
+    float:right;
+}
+
+.dane1{
+    background-color:#e4e4e4;
 }
 
 
