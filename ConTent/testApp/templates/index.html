@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <head>
     <meta charset = "utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
 </head>
 <body class="body">
 <table class="header">
@@ -31,31 +31,31 @@
 <div class="carousel">
     <div class="carousel-body">    
         <div class="arrows">
-            <img src="images/left.jpg">
+            <img src="{% static 'images/left.jpg' %}">
         </div>
         <div class="carousel-item">
             <a href="static.html">
-            <img src="images/tent1.jpg" width="300">
+            <img src="{% static 'images/tent1.jpg' %}" width="300">
         </a>
             <h1>Nazwa pola</h1>
             <h1>miasto</h1>
         </div>
         <div class="carousel-item">
             <a href="static.html">
-            <img src="images/tent2.jpg" width="300">
+            <img src="{% static 'images/tent2.jpg' %}" width="300">
             </a>
             <h1>Nazwa pola</h1>
             <h1>miasto</h1>
         </div>
         <div class="carousel-item">
             <a href="static.html">
-            <img src="images/tent3.jpg" width="300">
+            <img src="{% static 'images/tent3.jpg' %}" width="300">
         </a>
             <h1>Nazwa pola</h1>
             <h1>miasto</h1>
         </div>
         <div class="carousel-item">
-            <img src="images/right.jpg">
+            <img src="{% static 'images/right.jpg' %}">
         </div>
     </div>
 </div>
