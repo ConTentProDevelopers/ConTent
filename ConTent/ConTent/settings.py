@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
+    'graphviz',
+    'testApp',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -50,12 +53,18 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTH_USER_MODEL = 'testApp.MyUser'
+AUTHENTICATION_BACKENDS = ('testApp.mybackend.SettingsBackend',)
+ADMIN_LOGIN = 'admin@admin.pl'
+ADMIN_PASSWORD = 'contentadmin'
+
+
 ROOT_URLCONF = 'ConTent.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'ConTent/testApp/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,7 +78,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ConTent.wsgi.application'
-
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'ConTent/testApp/templates')]
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -80,7 +89,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -119,3 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)

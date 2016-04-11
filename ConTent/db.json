@@ -1,0 +1,22 @@
+[
+  {
+    "model": "testApp.Admin",
+    "pk1": 1,
+    "fields": {
+      "email_admina": "test@test.pl",
+      "imie_admina": "testImie",
+      "nazwisko_admina": "testNazwisko",
+      "telefon_admina": "telefonAdmina"
+    }
+  },
+  {
+    "model": "testApp.Admin",
+    "pk1": 2,
+    "fields": {
+      "email_admina": "test@test.pl",
+      "imie_admina": "testImie",
+      "nazwisko_admina": "testNazwisko",
+      "telefon_admina": "telefonAdmina"
+    }
+  }
+]

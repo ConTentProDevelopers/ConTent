@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<head>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body class="body">
+<table class="header">
+    <tr>
+        <td><a href="index.html"><div class="placeholder"></div></a>
+        </td>
+        <td>
+            <form>
+                <input class="searchInput" placeholder="Podaj nazwę miejsocwości lub pola namiotowego" type="text" size="50" name="search">
+                <a href="postsearch.html">
+                <p class="searchButton">Wyszukaj</p></a>
+            </form>
+        </td>
+        <td align="right">
+            <div style="positon:fixed; padding:10px;">
+                <ul>
+                <li style="float:right"><a href="register.html">Rejestracja</a> </li>
+                <li style="float:right"><a href="login.html">Zaloguj się</a> </li>
+            </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div class="divglowny">
+<p class="paragraft">Witaj na stronie ContTent. Wybierz pole namiotowe dla siebie!</p>
+<div class="carousel">
+    <div class="carousel-body">    
+        <div class="arrows">
+            <img src="images/left.jpg">
+        </div>
+        <div class="carousel-item">
+            <a href="static.html">
+            <img src="images/tent1.jpg" width="300">
+        </a>
+            <h1>Nazwa pola</h1>
+            <h1>miasto</h1>
+        </div>
+        <div class="carousel-item">
+            <a href="static.html">
+            <img src="images/tent2.jpg" width="300">
+            </a>
+            <h1>Nazwa pola</h1>
+            <h1>miasto</h1>
+        </div>
+        <div class="carousel-item">
+            <a href="static.html">
+            <img src="images/tent3.jpg" width="300">
+        </a>
+            <h1>Nazwa pola</h1>
+            <h1>miasto</h1>
+        </div>
+        <div class="carousel-item">
+            <img src="images/right.jpg">
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <ul style="    margin-left: 400px; margin-right: 50px;">
+    <li><a href="static.html">Regulamin</a></li>
+    <li><a href="static.html">Polityka prywatności</a></li>
+    <li><a href="static.html">Dla właściceli</a></li>
+    <li><a href="static.html">Kontakt</a></li>
+</ul>
+</div>
+</body>
