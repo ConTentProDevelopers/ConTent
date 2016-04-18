@@ -15,28 +15,31 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font: 20px Calibri Light, sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
 
 }
-li a:hover:not(.active) {
-    background-color: #004d99;
-    text-decoration: none;
-}
+
 div{
     font: 20px Calibri Light, sans-serif;
 }
 table{
     font: 20px Calibri Light, sans-serif;
 }
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
 .mainTable{
     
 }
-.body{
-    background-image: url("images/tent.jpg");
-}/* dodane AGA*/
 .paragraft{
     text-align: center;
-    font: 20px Calibri Light, sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 .divglowny{
     background-color: lightgrey;
@@ -45,17 +48,16 @@ table{
 }
 .header{
     background-color: #00001a;
-    border: 1px solid #00001a;
     height: 50px;  
     width: 99.5%;
     align-items: center;
-    vertical-align: top; 
-    font: 20px Calibri Light, sans-serif;
+    vertical-align: top;
+    font-family: 'Didact Gothic', sans-serif;
+    border-radius: 5px;
 }
 
 .footer{
     background-color: #00001a;
-    border: 1px solid #00001a;
     height: 60px;  
     width: 99.5%;
     align-items: center;
@@ -64,6 +66,8 @@ table{
     padding-top: 10px;
     padding-bottom: 10px;
     font: 20px Calibri Light, sans-serif;
+    position: relative;
+    border-radius: 3px;
 }
 
 
@@ -83,56 +87,51 @@ h1{
 }
 
 .placeholder {
-    width: 90 ;
-    height: 90;
+    width: 90px;
+    height: 90px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('images/logo.jpg');
     display: inline-block;
     float: left;
     margin: 10px 10px 10px 10px;
+    margin: 25px 10px 10px 30px;
 }
 
 .searchInput{
-    font-size: 13px;
+    font-size: 20px;
     color: darkgrey;
     float: left;
     padding: 15px;
     border: solid 3px #ccc;
-    font: 20px Calibri Light, sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
-.searchButton{
+.btn-default.btn{
     background-color: #fff;
     border: 2px solid black;
     float:left;
     color: black;
     padding: 15px 30px;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
-    margin: 0px 20px;
+    margin: 3px 20px;
 }
 
 .carousel{
     display: table;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
+
 }
 .carousel-body{
     display: table-row;
 }
-.carousel-item{
+.item{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    padding: 2% 15% 5% 15%;
 }
-.carousel-item h1{
-    text-align: center;
-    font-size: 15px;
-    font: 20px Calibri Light, sans-serif;
-}
+
 .divstatic{
     align-content: center;
     text-align: center;
@@ -189,7 +188,7 @@ h1{
     text-align: center;
     font-size: 14px;
     display: table-cell;
-    width: 148;
+    width: 148px;
 }
 
 .login{
@@ -234,7 +233,7 @@ button{
 .user-menu button:hover{
     background-color: #000;
     color: white;
-    
+
 }
 
 .user-content {
@@ -307,12 +306,30 @@ button{
     background-color:#e4e4e4;
 }
 
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev		 { left: -25%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.right {background-image:none !important; color: black; padding: 8% 0% 10% 25%;}
+.carousel-control.right:focus {color:gray;}
+.carousel-control.right:hover {color:black;}
+.carousel-control.left  {background-image:none !important; color: black; padding: 8% 25% 10% 0%;}
+.carousel-control.left:focus {color:gray;}
+.carousel-control.left:hover {color:black;}
 
+html body .container-fluid.body-content {
+  position: absolute;
+  top: 120px;
+  bottom: 100px;
+  right: 15px;
+  left: 5px;
+}
 
+.jumbotron {
+    height: 100%;
+    overflow: hidden !important;
+}
 
-
-
-
-
-
-
+.myCarousel {
+    border: 1px solid transparent;
+}

@@ -3,6 +3,7 @@ from django.contrib.auth.models import (BaseUserManager, AbstractBaseUser)
 from django.conf import settings
 
 # Create your models here.
+# CREATE ABILITY TO ADD EVERY TYPE OF USER
 
 
 class MyUserManager(BaseUserManager):
