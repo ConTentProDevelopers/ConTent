@@ -1,0 +1,161 @@
+[
+  {
+    "model": "testApp.Campsite",
+    "pk1": 1,
+    "fields": {
+      "field_owner": 1,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "images/tent1.jpg",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 2,
+    "fields": {
+      "field_owner": 1,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "images/tent2.jpg",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 3,
+    "fields": {
+      "field_owner": 1,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "images/tent3.jpg",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 4,
+    "fields": {
+      "field_owner": 2,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "images/tent4.jpg",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 5,
+    "fields": {
+      "field_owner": 2,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "images/tent5.jpg",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 6,
+    "fields": {
+      "field_owner": 3,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "",
+      "field_postal_code": "images/tent6.jpg",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 7,
+    "fields": {
+      "field_owner": 4,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "images/tent7.jpg",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 8,
+    "fields": {
+      "field_owner": 4,
+      "average_rating": 4.25,
+      "field_name": "111111111",
+      "field_address": "",
+      "field_description": "",
+      "field_locality": "",
+      "field_photo": "images/tent8.jpg",
+      "field_postal_code": "",
+      "ratings_number": 15,
+      "field_email": "",
+      "field_phone_number": "",
+      "field_website": ""
+    }
+  },
+  {
+    "model": "testApp.Campsite",
+    "pk1": 9,
+    "fields": {
+      "field_owner": 4,
+      "average_rating": 4.25,
+      "field_name": "Marzena",
+      "field_address": "",
+      "field_description": "Desc of field Marzena",
+      "field_locality": "",
+      "field_photo": "images/tent9.jpg",
+      "field_postal_code": "",
+      "ratings_number": 15
+    }
+  }
+]

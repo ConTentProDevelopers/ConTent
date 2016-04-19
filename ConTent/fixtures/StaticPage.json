@@ -1,0 +1,10 @@
+[
+  {
+    "model": "testApp.StaticPage",
+    "pk1": 1,
+    "fields": {
+      "contents": "Very very static page",
+      "title": "Test static page"
+    }
+  }
+]
