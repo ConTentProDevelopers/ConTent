@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7865a9f-2ab6-4b4e-b7e0-774f1d245375" name="Default" comment="" />
+    <list default="true" id="c7865a9f-2ab6-4b4e-b7e0-774f1d245375" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/Campsite.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/Convenience.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/Customer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/FieldOwner.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/MyUser.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/Place.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/Rating.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/Reservation.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/fixtures/StaticPage.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConTent/testApp/static/js/myCarousel.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/db.sqlite3" afterPath="$PROJECT_DIR$/ConTent/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent1.jpg" afterPath="$PROJECT_DIR$/ConTent/testApp/static/images/tent1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent2.jpg" afterPath="$PROJECT_DIR$/ConTent/testApp/static/images/tent2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/static/images/tent3.jpg" afterPath="$PROJECT_DIR$/ConTent/testApp/static/images/tent3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ConTent.iml" afterPath="$PROJECT_DIR$/.idea/ConTent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Lisu.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Lisu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/ConTent/settings.py" afterPath="$PROJECT_DIR$/ConTent/ConTent/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/ConTent/urls.py" afterPath="$PROJECT_DIR$/ConTent/ConTent/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/ConTent/wsgi.py" afterPath="$PROJECT_DIR$/ConTent/ConTent/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/ConTentPass.txt" afterPath="$PROJECT_DIR$/ConTent/ConTentPass.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/db.json" afterPath="$PROJECT_DIR$/ConTent/db.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/manage.py" afterPath="$PROJECT_DIR$/ConTent/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/admin.py" afterPath="$PROJECT_DIR$/ConTent/testApp/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/apps.py" afterPath="$PROJECT_DIR$/ConTent/testApp/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/ConTent/testApp/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/models.py" afterPath="$PROJECT_DIR$/ConTent/testApp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/mybackend.py" afterPath="$PROJECT_DIR$/ConTent/testApp/mybackend.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/static/stylesheet.css" afterPath="$PROJECT_DIR$/ConTent/testApp/static/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/addfield.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/addfield.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/base.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/confirmation.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/confirmation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/error404.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/error404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/fields.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/fields.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/fieldsite.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/fieldsite.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/forgotemail.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/forgotemail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/forgotpassword.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/forgotpassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/index.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/indexpage.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/indexpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/login.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/myreservations.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/myreservations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/postsearch.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/postsearch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/register.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/static.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/static.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/user.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/templates/user_changepassword.html" afterPath="$PROJECT_DIR$/ConTent/testApp/templates/user_changepassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/tests.py" afterPath="$PROJECT_DIR$/ConTent/testApp/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/urls.py" afterPath="$PROJECT_DIR$/ConTent/testApp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConTent/testApp/views.py" afterPath="$PROJECT_DIR$/ConTent/testApp/views.py" />
+    </list>
     <ignored path="ConTent.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -14,7 +79,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ConTent$manage.coverage" NAME="manage Coverage Results" MODIFIED="1460943818746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ConTent" />
+    <SUITE FILE_PATH="coverage/ConTent$manage.coverage" NAME="manage Coverage Results" MODIFIED="1461194893345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ConTent" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -41,19 +106,23 @@
     <favorites_list name="ConTent" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,27 +137,20 @@
         <option value="$PROJECT_DIR$/ConTent/testApp/migrations/0008_merge.py" />
         <option value="$PROJECT_DIR$/ConTent/testApp/migrations/0010_auto_20160408_0009.py" />
         <option value="$PROJECT_DIR$/ConTent/testApp/fixtures/my_initial_data" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/mybackend.py" />
-        <option value="$PROJECT_DIR$/ConTent/ConTent/settings.py" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/views.py" />
-        <option value="$PROJECT_DIR$/ConTent/ConTent/urls.py" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/static/js/myCarousel.js" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/models.py" />
-        <option value="$PROJECT_DIR$/ConTent/db.json" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/templates/index.html" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/static/stylesheet.css" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/templates/base.html" />
-        <option value="$PROJECT_DIR$/ConTent/testApp/urls.py" />
-        <option value="$PROJECT_DIR$/ConTent/MyUser.json" />
-        <option value="$PROJECT_DIR$/ConTent/Customer.json" />
         <option value="$PROJECT_DIR$/ConTent/testApp/admin.py" />
-        <option value="$PROJECT_DIR$/ConTent/Customer - Kopia.json" />
-        <option value="$PROJECT_DIR$/ConTent/fixtures/Campsite.json" />
-        <option value="$PROJECT_DIR$/ConTent/fixtures/Convenience.json" />
-        <option value="$PROJECT_DIR$/ConTent/fixtures/Place.json" />
-        <option value="$PROJECT_DIR$/ConTent/fixtures/Rating.json" />
-        <option value="$PROJECT_DIR$/ConTent/fixtures/StaticPage.json" />
-        <option value="$PROJECT_DIR$/ConTent/fixtures/Reservation.json" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/mybackend.py" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/templates/index.html" />
+        <option value="$PROJECT_DIR$/ConTent/ConTent/urls.py" />
+        <option value="$PROJECT_DIR$/ConTent/ConTent/settings.py" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/templates/base.html" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/templates/header.html" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/models.py" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/static/stylesheet.css" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/urls.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/28729a3a-64a7-4444-82d1-1b054dc2c5fc/console.sql" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/templates/register.html" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/forms.py" />
+        <option value="$PROJECT_DIR$/ConTent/testApp/views.py" />
       </list>
     </option>
   </component>
@@ -98,10 +160,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
-    <option name="y" value="-135" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -110,16 +172,19 @@
           <State>
             <id />
           </State>
+          <State>
+            <id>Spelling</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Buildout</id>
+            <id>Django</id>
           </State>
         </selected-state>
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -144,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,7 +223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ConTent" />
+              <option name="myItemId" value="ConTent-test_branch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -169,13 +233,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -195,7 +260,7 @@
       </envs>
       <option name="SDK_HOME" value="C:\Users\Lisu\AppData\Local\Programs\Python\Python35-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ConTent" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ConTent" />
@@ -431,8 +496,8 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Lisu\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -444,28 +509,52 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-135" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17430703" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24585062" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18464053" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15663901" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="362" y="548" width="1198" height="409" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34640524" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29707113" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22698745" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout>
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="362" y="548" width="1198" height="409" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32635984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2834728" sideWeight="0.49791667" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2359375" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -480,11 +569,74 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ConTent/ConTent/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/ConTent/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/testApp/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -562,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/ConTent/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -604,7 +749,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/testApp/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.395548">
+          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/confirmation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -613,12 +779,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/testApp/mybackend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6720086">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.3962264">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/Django_graphic_models/test4.png">
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.051908396">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/ConTent/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4992658">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/static/images/placeholder.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -630,323 +810,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/testApp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044270832">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/ConTent/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0963542">
-          <caret line="110" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/testApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2115384">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.025954198">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/testApp/static/js/myCarousel.js">
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.423077">
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.18167938">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/testApp/static/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.272727">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding />
+        <state vertical-scroll-proportion="-11.461538">
+          <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/user-client-startpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/Django_graphic_models/test4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConTent/testApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.072649576">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          <folding />
+        <state vertical-scroll-proportion="0.093406595">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/ConTent/urls.py">
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32692307">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
+        <state vertical-scroll-proportion="0.907767">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf</OriginalElement>
-          <nodes>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_staticpage</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_campsite</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_place</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:django_admin_log</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:auth_group_permissions</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_place_reservation</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_rating</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_myuser</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:auth_group</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_reservation</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_customer</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:sqlite_sequence</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_fieldowner</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:auth_permission</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:django_migrations</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:django_content_type</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:django_session</node>
-            <node x="" y="">2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf.TABLE:testApp_convenience</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7125084516565247" x="444.6238375403302" y="348.9235148984627" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60714287">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/console.sql">
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52397263">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.494863">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConTent/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/testApp/admin.py">
+    <entry file="file://$PROJECT_DIR$/ConTent/testApp/templates/user-client-editlogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23821656">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.15317918">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/fixtures/Campsite.json">
+    <entry file="file://$PROJECT_DIR$/ConTent/ConTent/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6192358">
-          <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/fixtures/Convenience.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.463768">
-          <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/fixtures/Place.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26877472">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/fixtures/Rating.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22397892">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/fixtures/StaticPage.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17918314">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70092225">
-          <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="509" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConTent/fixtures/Reservation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20158103">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/testApp_myuser">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/testApp_rating">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/django_admin_log">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/auth_permission">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/auth_group_permissions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/django_migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/django_content_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/testApp_place_reservation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/testApp_fieldowner">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/46a0ab95/2b1ce887-a4dc-4ba2-b1ac-f16d066b4fdf/testApp_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.8253425">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
         </state>
       </provider>
     </entry>

@@ -5,6 +5,8 @@ from . import views
 urlpatterns = [
     url(r'^index/', views.index, name='index'),
     url(r'^indexpage/', views.indexpage, name='indexpage'),
+    url(r'^header/', views.header, name='header'),
+    url(r'^footer/', views.footer, name='footer'),
     url(r'^error404/', views.error404, name='404'),
     url(r'^user/addfield/', views.addfield, name='addfield'),
     url(r'^reservation/confirmation/', views.confirmation, name='confirmation'),
