@@ -54,7 +54,8 @@ MIDDLEWARE_CLASSES = [
 ]
 
 AUTH_USER_MODEL = 'testApp.MyUser'
-AUTHENTICATION_BACKENDS = ('testApp.mybackend.SettingsBackend',)
+AUTHENTICATION_BACKENDS = ('testApp.mybackend.SettingsBackend',
+                           'testApp.mybackend.UserBackend',)
 ADMIN_LOGIN = 'admin@admin.pl'
 ADMIN_PASSWORD = 'contentadmin'
 

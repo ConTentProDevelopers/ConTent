@@ -3,12 +3,8 @@
     "model": "testApp.Place",
     "pk1": 1,
     "fields": {
-      "campsite": 1,
-      "dimension": 5.25,
-      "limit_of_places": 5,
-      "number_of_places": 120,
-      "place_type": "Miejsce namiotowe",
-      "price": 80.00
+      "placeType": 1,
+      "reservation": 1,
     }
   }
 ]

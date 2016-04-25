@@ -1,6 +1,6 @@
 [
   {
-    "model": "testApp.Place",
+    "model": "testApp.PlaceType",
     "pk1": 1,
     "fields": {
       "campsite": 1,

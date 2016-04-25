@@ -38,3 +38,19 @@ class SettingsBackend(object):
             return MyUser.objects.get(pk=user_id)
         except MyUser.DoesNotExist:
             return None
+
+
+class UserBackend(object):
+
+    def authenticate(self, username=None, password=None):
+        login_valid = (settings.ADMIN_LOGIN == username)
+        if not login_valid:
+            user = MyUser.objects.get(email=username)
+            return user
+        return None
+
+    def get_user(self, user_id):
+        try:
+            return MyUser.objects.get(pk=user_id)
+        except MyUser.DoesNotExist:
+            return None
