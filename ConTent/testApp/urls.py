@@ -3,7 +3,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^index/', views.index, name='index'),
+    url(r'^index/|^$', views.index, name='index'),
     url(r'^indexpage/', views.indexpage, name='indexpage'),
     url(r'^error404/', views.error404, name='404'),
     url(r'^user/addfield/', views.addfield, name='addfield'),
@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^user/myreservations/', views.myreservations, name='myreservations'),
     url(r'^postsearch/', views.postsearch, name='postsearch'),
     url(r'^register/', views.register, name='register'),
-    url(r'^static/', views.static, name='static'),
+    url(r'^static_page/', views.static_page, name='static_page'),
     url(r'^user/', views.user, name='user'),
     url(r'^user/user-changepassword/', views.user_changepassword, name='user_changepassword'),
 

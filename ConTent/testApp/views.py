@@ -86,8 +86,8 @@ def register(request):
     return render(request, 'register.html')
 
 
-def static(request):
-    return render(request, 'static.html')
+def static_page(request):
+    return render(request, 'static_page.html')
 
 
 def user(request):
