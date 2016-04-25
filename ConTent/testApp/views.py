@@ -103,6 +103,7 @@ def userowneraddfield(request):
     return render(request, 'user-owner-fieldedit.html')
 
 def register(request):
+    print("jolo")
     if(request.POST):
         customerForm = CustomerRegisterForm(request.POST)
         print(customerForm)
