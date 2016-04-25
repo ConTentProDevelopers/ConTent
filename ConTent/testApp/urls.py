@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^fieldsite/', views.fieldsite, name='fieldsite'),
     url(r'^forgotemail/', views.forgotemail, name='forgotemail'),
     url(r'^forgotpassword/', views.forgotpassword, name='forgotpassword'),
-    url(r'^login/', views.login, name='login'),
+    url(r'^login/', views.login_user_form),
     url(r'^user/myreservations/', views.myreservations, name='myreservations'),
     url(r'^postsearch/', views.postsearch, name='postsearch'),
     url(r'^register/', views.register, name='register'),

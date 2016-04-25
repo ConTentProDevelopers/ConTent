@@ -4,6 +4,15 @@ from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from testApp.models import MyUser
+from testApp.models import Customer
+from testApp.models import FieldOwner
+from testApp.models import Campsite
+from testApp.models import Rating
+from testApp.models import Reservation
+from testApp.models import PlaceType
+from testApp.models import Place
+from testApp.models import Convenience
+from testApp.models import StaticPage
 
 # Register your models here.
 
@@ -65,5 +74,81 @@ class UserAdmin(BaseUserAdmin):
     ordering = ('email',)
     filter_horizontal = ()
 
+
+class CustomerAdmin(admin.ModelAdmin):
+    list_display = ('id', 'user')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class FieldOwnerAdmin(admin.ModelAdmin):
+    list_display = ('id', 'company_name', 'company_NIP', 'company_REGON', 'company_locality', 'company_address',
+                    'company_postal_code', 'account_validated', 'user')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class CampsiteAdmin(admin.ModelAdmin):
+    list_display = ('id', 'field_name', 'field_locality', 'field_address', 'field_postal_code', 'field_phone_number',
+                    'field_email', 'field_website', 'ratings_number', 'average_rating', 'field_photo',
+                    'field_description', 'field_owner')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class RatingAdmin(admin.ModelAdmin):
+    list_display = ('id', 'value', 'comment', 'campsite', 'customer')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class ReservationAdmin(admin.ModelAdmin):
+    list_display = ('id', 'arrival_date', 'departure_date', 'hour_of_reservation', 'status', 'customer', 'fieldOwner')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class PlaceTypeAdmin(admin.ModelAdmin):
+    list_display = ('id', 'place_type', 'price', 'dimension', 'number_of_places', 'limit_of_places', 'campsite')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class PlaceAdmin(admin.ModelAdmin):
+    list_display = ('id', 'placeType', 'reservation')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class ConvenienceAdmin(admin.ModelAdmin):
+    list_display = ('id', 'canteen', 'wifi', 'shower', 'easy_access', 'parking', 'equipment_rental', 'campsite')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
+class StaticPageAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'contents')
+    list_filter = ()
+    ordering = ('id',)
+    filter_horizontal = ()
+
+
 admin.site.register(MyUser, UserAdmin)
+admin.site.register(Customer, CustomerAdmin)
+admin.site.register(FieldOwner, FieldOwnerAdmin)
+admin.site.register(Campsite, CampsiteAdmin)
+admin.site.register(Rating, RatingAdmin)
+admin.site.register(Reservation, ReservationAdmin)
+admin.site.register(PlaceType, PlaceTypeAdmin)
+admin.site.register(Place, PlaceAdmin)
+admin.site.register(Convenience, ConvenienceAdmin)
+admin.site.register(StaticPage, StaticPageAdmin)
 admin.site.unregister(Group)

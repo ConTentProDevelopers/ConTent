@@ -333,3 +333,9 @@ html body .container-fluid.body-content {
 .myCarousel {
     border: 1px solid transparent;
 }
+
+#loginPlaceholder {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}

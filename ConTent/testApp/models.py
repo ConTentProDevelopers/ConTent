@@ -123,7 +123,7 @@ class Reservation(models.Model):
     fieldOwner = models.ForeignKey(FieldOwner)
 
 
-class Place(models.Model):
+class PlaceType(models.Model):
     id = models.AutoField(primary_key=True)
     place_type = models.CharField(max_length=50)
     price = models.FloatField()
@@ -132,7 +132,14 @@ class Place(models.Model):
     limit_of_places = models.IntegerField(null=True)
 
     campsite = models.ForeignKey(Campsite, on_delete=models.CASCADE)
-    reservation = models.ManyToManyField(Reservation)
+    reservation = models.ManyToManyField(Reservation, through="Place")
+
+
+class Place(models.Model):
+    id = models.AutoField(primary_key=True)
+
+    placeType = models.ForeignKey(PlaceType, on_delete=models.CASCADE)
+    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE)
 
 
 class Convenience(models.Model):

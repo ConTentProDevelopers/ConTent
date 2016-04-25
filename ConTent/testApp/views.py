@@ -1,6 +1,14 @@
 from django.shortcuts import render
+from django.http import *
+from django.shortcuts import render_to_response, redirect
+from django.template import RequestContext
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import get_user_model
 
 # Create your views here.
+
+User = get_user_model()
 
 
 def index(request):
@@ -47,8 +55,24 @@ def header(request):
     return render(request, 'header.html')
 
 
-def login(request):
-    return render(request, 'login.html')
+def login_user_form(request):
+    state = "Please log in below..."
+    if request.POST:
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        user = authenticate(username=email, password=password)
+        if user is not None:
+            if user.is_active:
+                login(request, user)
+                state = "You're successfully logged in!"
+            else:
+                state = "Your account is not active, please contact the site admin."
+        else:
+            state = "Your username and/or password were incorrect."
+
+        return render_to_response('login.html', {'state': state, 'email': email}, RequestContext(request))
+    else:
+        return render(request, 'login.html', {'state': state})
 
 
 def myreservations(request):
