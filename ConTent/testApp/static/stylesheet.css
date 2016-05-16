@@ -192,12 +192,15 @@ h1{
 }
 
 .login{
-    padding: 20px;
+    padding: 100px;
     width: 100%;
+    background-color: white;
+    align-content: center;
 }
 
 .login td{
-    width: 50%;
+    align-content: center;
+
 }
 
 h3{
@@ -213,6 +216,7 @@ button{
     text-align: center;
     margin: 20px;
 }
+
 .user-menu {
     border: 1px solid black;
     vertical-align: top;
@@ -266,7 +270,6 @@ button{
     margin: 10px;
     color: black;
     padding: 5px 20px;
-    margin: 0px 10px;
     font-size: 14px;
     text-align: center;
 }
@@ -323,19 +326,23 @@ html body .container-fluid.body-content {
   bottom: 100px;
   right: 15px;
   left: 5px;
+  overflow: hidden;
 }
 
 .jumbotron {
     height: 100%;
-    overflow: hidden !important;
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+
 
 .myCarousel {
     border: 1px solid transparent;
 }
 
-#loginPlaceholder {
-    position: absolute;
-    top: 10%;
-    right: 15%;
+.errorForm {
+    color: red;
+    font-size: 13px;
+    text-align: center;
 }

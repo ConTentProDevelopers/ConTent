@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<head>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body class="body">
+            <div class="container-fluid body-content">
+            <h1 class="jumbotron">
+                <table>
+                <tr>
+                    <td class="user-menu">
+                        <button>Dane użytkownika</button> 
+                        <button>Dodaj pole namiotowe</button>
+                        <button>Moje pola namiotowe</button>
+                        <button>Zmień dane logowania</button>
+                        <button>Wyloguj</button>
+                    </td>
+                    <td class="user-content">
+                        <h2>Moje pola namiotowe</h2>
+                        <table class="table table-striped">
+                        <tbody>
+                          <tr>
+                            <td>Pole namiotowe</td>
+                            <td>
+                                <button>Edytuj</button>
+                                <button>Informacje</button>
+                                <button>Usuń</button>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>Pole namiotowe</td>
+                            <td>
+                                <button>Edytuj</button>
+                                <button>Informacje</button>
+                                <button>Usuń</button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Pole namiotowe</td>
+                            <td>
+                                <button>Edytuj</button>
+                                <button>Informacje</button>
+                                <button>Usuń</button>
+                              </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                </tr>
+            </table>
+            </h1>
+            </div>
+{% endblock %}
+</body>
