@@ -3,7 +3,7 @@
     "model": "testApp.FieldOwner",
     "pk1": 1,
     "fields": {
-      "user": 7,
+      "user": 6,
       "company_NIP": "1111111111",
       "company_REGON": "111111111",
       "company_address": "",
@@ -16,7 +16,7 @@
     "model": "testApp.FieldOwner",
     "pk1": 2,
     "fields": {
-      "user": 8,
+      "user": 7,
       "company_NIP": "1111111111",
       "company_REGON": "111111111",
       "company_address": "",
@@ -29,7 +29,7 @@
     "model": "testApp.FieldOwner",
     "pk1": 3,
     "fields": {
-      "user": 9,
+      "user": 8,
       "company_NIP": "1111111111",
       "company_REGON": "111111111",
       "company_address": "",
@@ -42,7 +42,7 @@
     "model": "testApp.FieldOwner",
     "pk1": 4,
     "fields": {
-      "user": 10,
+      "user": 9,
       "company_NIP": "1111111111",
       "company_REGON": "111111111",
       "company_address": "",
@@ -55,7 +55,7 @@
     "model": "testApp.FieldOwner",
     "pk1": 5,
     "fields": {
-      "user": 11,
+      "user": 10,
       "company_NIP": "1111111111",
       "company_REGON": "111111111",
       "company_address": "",

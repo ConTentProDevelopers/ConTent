@@ -45,7 +45,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 6,
+    "pk1": 11,
     "fields": {
       "email": "klient5@test.pl",
       "first_name": "Rysio",
@@ -100,7 +100,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 11,
+    "pk1": 6,
     "fields": {
       "email": "wlasciciel5@test.pl",
       "first_name": "Pawel",
