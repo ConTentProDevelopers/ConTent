@@ -29,6 +29,17 @@
                         <h2>Moje pola namiotowe</h2>
                         <table class="table table-striped">
                         <tbody>
+                        {% for campsite in campsites %}
+                        <tr>
+                            <td>{{ campsite.field_name }}</td>
+                            <td>
+                                <button>Edytuj</button>
+                                <button>Informacje</button>
+                                <button>Usuń</button>
+                              </td>
+                          </tr>
+                        {% endfor %}
+                        <!--
                           <tr>
                             <td>Pole namiotowe</td>
                             <td>
@@ -53,6 +64,7 @@
                                 <button>Usuń</button>
                               </td>
                           </tr>
+                          -->
                         </tbody>
                       </table>
                     </td>

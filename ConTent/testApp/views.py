@@ -56,26 +56,53 @@ def forgotpassword(request):
 def header(request):
     return render(request, 'header.html')
 
-
 def login_user_form(request):
     state = "Please log in below..."
-    if request.POST:
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        user = authenticate(username=email, password=password)
-        if user is not None:
-            if user.is_active:
-                login(request, user)
-                state = "You're successfully logged in!"
-            else:
-                state = "Your account is not active, please contact the site admin."
-        else:
-            state = "Your username and/or password were incorrect."
-
-        return render_to_response('login.html', {'state': state, 'email': email}, RequestContext(request))
-    else:
+    if not request.POST:
         return render(request, 'login.html', {'state': state})
+    email = request.POST.get('email')
+    password = request.POST.get('password')
+    user = get_user(email=email, password=password)
+    state = check_user_state(user)
+    if state != 'correct':
+        return render_to_response('login.html', {'state': state, 'email': email}, RequestContext(request))
+    if user_is_field_owner(user):
+        return userownerstart(request,user.id)
+    if user_is_customer(user):
+        return userclientstart(request,user.id)
 
+def get_user(email, password):
+    try:
+        user = authenticate(username=email, password=password)
+        # hacking begins here :<
+        if password!=MyUser.objects.get(email=email).password:
+            user=None
+    except:
+        user = None
+    return user
+
+def check_user_state(user):
+    if user is None:
+            return "Your username and/or password were incorrect."
+    if not user.is_active:
+            return "Your account is not active, please contact the site admin."
+    if not (user_is_field_owner(user) or user_is_customer(user)):
+            return "User is not customer nor fieldOwner"
+    return 'correct'
+
+def user_is_customer(user):
+    try:
+        user.customer
+    except:
+        return False
+    return True
+
+def user_is_field_owner(user):
+    try:
+        user.fieldowner
+    except:
+        return False
+    return True
 
 def myreservations(request):
     return render(request, 'myreservations.html')
@@ -96,11 +123,21 @@ def user(request):
 def user_changepassword(request):
     return render(request, 'user_changepassword.html')
 
-def userownerstart(request):
-    return render(request, 'user-owner-startpage-myfields.html')
+def userownerstart(request,user_id):
+    field_owner = MyUser.objects.get(id = user_id).fieldowner
+    context = {'campsites':Campsite.objects.filter(field_owner=field_owner)}
+    return render(request, 'user-owner-startpage-myfields.html',context)
+
+def userclientstart(request,user_id):
+    client = MyUser.objects.get(id = user_id).customer
+    context = {'first_name':client.user.first_name,
+               'last_name':client.user.last_name,
+               'phone_number':client.user.phone_number}
+    return render(request, 'user-client-startpage.html',context)
 
 def userowneraddfield(request):
     return render(request, 'user-owner-fieldedit.html')
+
 
 def register(request):
     if(request.POST):

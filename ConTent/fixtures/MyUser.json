@@ -1,7 +1,7 @@
 [
   {
     "model": "testApp.MyUser",
-    "pk1": 2,
+    "pk1": 1,
     "fields": {
       "email": "klient1@test.pl",
       "first_name": "Karol",
@@ -12,7 +12,7 @@
   },
   {
     "model": "testApp.MyUser",
-    "pk1": 3,
+    "pk1": 2,
     "fields": {
       "email": "klient2@test.pl",
       "first_name": "Norman",
@@ -23,7 +23,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 4,
+    "pk1": 3,
     "fields": {
       "email": "klient3@test.pl",
       "first_name": "Janusz",
@@ -34,7 +34,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 5,
+    "pk1": 4,
     "fields": {
       "email": "klient4@test.pl",
       "first_name": "Maciek",
@@ -45,7 +45,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 11,
+    "pk1": 5,
     "fields": {
       "email": "klient5@test.pl",
       "first_name": "Rysio",
@@ -56,7 +56,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 7,
+    "pk1": 6,
     "fields": {
       "email": "wlasciciel1@test.pl",
       "first_name": "Wonsz",
@@ -67,7 +67,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 8,
+    "pk1": 7,
     "fields": {
       "email": "wlasciciel2@test.pl",
       "first_name": "Adam",
@@ -78,7 +78,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 9,
+    "pk1": 8,
     "fields": {
       "email": "wlasciciel3@test.pl",
       "first_name": "Danuta",
@@ -89,7 +89,7 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 10,
+    "pk1": 9,
     "fields": {
       "email": "wlasciciel4@test.pl",
       "first_name": "Anna",
@@ -100,13 +100,24 @@
   },
     {
     "model": "testApp.MyUser",
-    "pk1": 6,
+    "pk1": 10,
     "fields": {
       "email": "wlasciciel5@test.pl",
       "first_name": "Pawel",
       "last_name": "Kubelowski",
       "password": "password",
       "phone_number": "123123123"
+    }
+  },
+  {
+    "model": "testApp.MyUser",
+    "pk1": 11,
+    "fields": {
+      "email": "wlasciciel6@test.pl",
+      "first_name": "Mariusz",
+      "last_name": "Mruczek",
+      "password": "password",
+      "phone_number": "123987456"
     }
   }
 ]

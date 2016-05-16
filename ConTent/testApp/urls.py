@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^user/', views.user, name='user'),
     url(r'^user/user-changepassword/', views.user_changepassword, name='user_changepassword'),
     url(r'^user-owner-startpage/', views.userownerstart, name='user-owner-start'),
+    url(r'^user-client-startpage/', views.userclientstart, name='user-client-start'),
     url(r'^user-owner-addfield/', views.userowneraddfield, name='user-owner-addfield'),
 
 ]
