@@ -17,10 +17,10 @@
             <table class="header">
                 <tr>
                     <td>
-                        <div class="placeholder"><a href="#"><img src="{% static 'images/logo.jpg' %}" class="img-responsive"/></a></div>
+                        <div class="placeholder"><a href="/index"><img src="{% static 'images/logo.jpg' %}" class="img-responsive"/></a></div>
                     </td>
                     <td>
-                        <form>
+                        <form method="get" action="/postsearch">
                             <input class="searchInput" placeholder="Podaj nazwę miejsocwości lub pola namiotowego" type="text" size="50" name="search">
                             <button type="submit" class="btn btn-default">Wyszukaj</button>
                         </form>

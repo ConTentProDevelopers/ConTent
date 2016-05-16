@@ -109,7 +109,14 @@ def myreservations(request):
 
 
 def postsearch(request):
-    return render(request, 'postsearch.html')
+    search_text = request.GET.get('search')
+    keywords = [keyword.lower() for keyword in str(search_text).split()]
+    matched_campsites=[]
+    for campsite in Campsite.objects.all():
+        if any(keyword in campsite.field_name.lower() for keyword in keywords):
+            matched_campsites.append(campsite)
+    context = {'matched_campsites':matched_campsites}
+    return render(request, 'postsearch.html',context)
 
 
 def static_page(request):

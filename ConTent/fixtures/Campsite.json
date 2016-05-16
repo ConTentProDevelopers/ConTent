@@ -27,11 +27,11 @@
       "field_address": "",
       "field_description": "",
       "field_locality": "",
-      "field_photo": "",
+      "field_photo": "images/tent2.jpg",
       "field_postal_code": "",
       "ratings_number": 15,
       "field_email": "",
-      "field_phone_number": "images/tent2.jpg",
+      "field_phone_number": "",
       "field_website": ""
     }
   },
@@ -45,11 +45,11 @@
       "field_address": "",
       "field_description": "",
       "field_locality": "",
-      "field_photo": "",
+      "field_photo": "images/tent3.jpg",
       "field_postal_code": "",
       "ratings_number": 15,
       "field_email": "",
-      "field_phone_number": "images/tent3.jpg",
+      "field_phone_number": "",
       "field_website": ""
     }
   },
@@ -99,8 +99,8 @@
       "field_address": "",
       "field_description": "",
       "field_locality": "",
-      "field_photo": "",
-      "field_postal_code": "images/tent6.jpg",
+      "field_photo": "images/tent6.jpg",
+      "field_postal_code": "",
       "ratings_number": 15,
       "field_email": "",
       "field_phone_number": "",
