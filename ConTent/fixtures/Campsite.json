@@ -5,7 +5,7 @@
     "fields": {
       "field_owner": 1,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Zielona Przystan",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
@@ -23,15 +23,15 @@
     "fields": {
       "field_owner": 1,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Borowkowa Dolina",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
-      "field_photo": "",
+      "field_photo": "images/tent2.jpg",
       "field_postal_code": "",
       "ratings_number": 15,
       "field_email": "",
-      "field_phone_number": "images/tent2.jpg",
+      "field_phone_number": "",
       "field_website": ""
     }
   },
@@ -41,15 +41,15 @@
     "fields": {
       "field_owner": 1,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Zagajony Zagajnik",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
-      "field_photo": "",
+      "field_photo": "images/tent3.jpg",
       "field_postal_code": "",
       "ratings_number": 15,
       "field_email": "",
-      "field_phone_number": "images/tent3.jpg",
+      "field_phone_number": "",
       "field_website": ""
     }
   },
@@ -59,7 +59,7 @@
     "fields": {
       "field_owner": 2,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Sloneczna Kawerna",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
@@ -77,7 +77,7 @@
     "fields": {
       "field_owner": 2,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Bagnisty Staw",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
@@ -95,12 +95,12 @@
     "fields": {
       "field_owner": 3,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Suche Wrzosowisko",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
-      "field_photo": "",
-      "field_postal_code": "images/tent6.jpg",
+      "field_photo": "images/tent6.jpg",
+      "field_postal_code": "",
       "ratings_number": 15,
       "field_email": "",
       "field_phone_number": "",
@@ -113,7 +113,7 @@
     "fields": {
       "field_owner": 4,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Niezdecydowany Skrzat",
       "field_address": "",
       "field_description": "",
       "field_locality": "",
@@ -131,7 +131,7 @@
     "fields": {
       "field_owner": 4,
       "average_rating": 4.25,
-      "field_name": "111111111",
+      "field_name": "Wybujaly pak",
       "field_address": "",
       "field_description": "",
       "field_locality": "",

@@ -3,35 +3,35 @@
     "model": "testApp.Customer",
     "pk1": 1,
     "fields": {
-      "user": 2
+      "user": 1
     }
   },
     {
     "model": "testApp.Customer",
     "pk1": 2,
     "fields": {
-      "user": 3
+      "user": 2
     }
   },
     {
     "model": "testApp.Customer",
     "pk1": 3,
     "fields": {
-      "user": 4
+      "user": 3
     }
   },
     {
     "model": "testApp.Customer",
     "pk1": 4,
     "fields": {
-      "user": 5
+      "user": 4
     }
   },
     {
     "model": "testApp.Customer",
     "pk1": 5,
     "fields": {
-      "user": 6
+      "user": 5
     }
   }
 ]

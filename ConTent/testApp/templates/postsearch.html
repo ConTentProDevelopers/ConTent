@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <head>
        <meta charset = "utf-8">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -49,6 +50,13 @@
         <td style="background-color: green;">
             <div class="results">
                 <div class="results-body">
+                    {% for campsite in matched_campsites %}
+                    <div class="results-item">
+                        <img src="{% static campsite.field_photo %}" width="150" height="150">
+                        <p class="results-item-title">{{campsite.field_name}}</p>
+                    </div>
+                    {% endfor %}
+                    <!--
                     <div class="results-item">
                         <img src="images/placeholder.jpg" width="150" height="150">
                         <p class="results-item-title">Nazwa pola</p>
@@ -73,6 +81,7 @@
                         <img src="images/placeholder.jpg" width="150" height="150">
                         <p class="results-item-title">Nazwa pola</p>
                     </div>
+                    -->
                 </div>
             </div>
         </td>
