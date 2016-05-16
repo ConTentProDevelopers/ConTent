@@ -17,69 +17,27 @@
                     <div class="item active">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <a href="#"><img src="{% static 'images/tent1.jpg' %}" class="img-responsive" width="400"></a>
+                                <a href="#"><img src="{% static active.field_photo %}" class="img-responsive" width="400"></a>
                                 <div class="caption">
-                                    <h4>Pole namiotowe 1</h4>
-                                    <h4>Lokalizacja</h4>
+                                    <h4>{{ active.field_name }}</h4>
+                                    <h4>{{ active.field_locality }}</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    {% for campsite in campsites %}
+                     <div class="item">
                         <div class="col-md-4">
                             <div class="thumbnail">
-                                <a href="#"><img src="{% static 'images/tent2.jpg' %}" class="img-responsive" width="400"></a>
+                                <a href="#"><img src="{% static campsite.field_photo %}" class="img-responsive" width="400"></a>
                                 <div class="caption">
-                                    <h4>Pole namiotowe 2</h4>
-                                    <h4>Lokalizacja</h4>
+                                    <h4>{{campsite.field_name}}</h4>
+                                    <h4>{{campsite.field_locality}}</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a href="#"><img src="{% static 'images/tent3.jpg' %}" class="img-responsive" width="400"></a>
-                                <div class="caption">
-                                    <h4>Pole namiotowe 3</h4>
-                                    <h4>Lokalizacja</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a href="#"><img src="{% static 'images/tent4.jpg' %}" class="img-responsive" width="400"></a>
-                                <div class="caption">
-                                    <h4>Pole namiotowe 4</h4>
-                                    <h4>Lokalizacja</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a href="#"><img src="{% static 'images/tent5.jpg' %}" class="img-responsive" width="400"></a>
-                                <div class="caption">
-                                    <h4>Pole namiotowe 5</h4>
-                                    <h4>Lokalizacja</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a href="#"><img src="{% static 'images/tent6.jpg' %}" class="img-responsive" width="400"></a>
-                                <div class="caption">
-                                    <h4>Pole namiotowe 6</h4>
-                                    <h4>Lokalizacja</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
 
                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

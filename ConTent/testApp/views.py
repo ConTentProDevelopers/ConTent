@@ -14,7 +14,11 @@ User = get_user_model()
 
 
 def index(request):
-    return render(request, 'index.html')
+    campsites = Campsite.objects.all()
+    active = campsites[0]
+    campsites=campsites[1:]
+    context = {'campsites':campsites,'active':active}
+    return render(request, 'index.html',context)
 
 
 def indexpage(request):
@@ -113,10 +117,15 @@ def postsearch(request):
     keywords = [keyword.lower() for keyword in str(search_text).split()]
     matched_campsites=[]
     for campsite in Campsite.objects.all():
-        if any(keyword in campsite.field_name.lower() for keyword in keywords):
+        if keywords_match_campsite_name_or_locality(keywords,campsite):
             matched_campsites.append(campsite)
     context = {'matched_campsites':matched_campsites}
     return render(request, 'postsearch.html',context)
+
+def keywords_match_campsite_name_or_locality(keywords,campsite):
+    keywords_found_in_name = any(keyword in campsite.field_name.lower() for keyword in keywords)
+    keywords_found_in_locality = any(keyword in campsite.field_locality.lower() for keyword in keywords)
+    return keywords_found_in_name or keywords_found_in_locality
 
 
 def static_page(request):
