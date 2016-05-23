@@ -1,18 +1,30 @@
+
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
+
+<body class="body">
+    <div class="container-fluid body-content">
+        <div class="jumbotron">
 
 <table>
     <tr>
         <td class="user-menu">
-            <button>Dane użytkownika</button> 
+            <button>Dane użytkownika</button>
             <button>Dodaj pole namiotowe</button>
             <button>Moje pola namiotowe</button>
             <button>Zmień dane logowania</button>
             <button>Wyloguj</button>
         </td>
         <td class="user-content">
-            
+
             <h3>Zmień dane logowania</h3>
             <div style="float:left;margin:20px">
                 <form>
@@ -25,9 +37,13 @@
                     <br><br>
                     <button>Zapisz</button>
                 </form>
-            </div>           
-        
+            </div>
+
         </td>
-        
+
     </tr>
-</table>
+    </table>
+        </div>
+    </div>
+{% endblock %}
+</body>

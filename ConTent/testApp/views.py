@@ -131,7 +131,7 @@ def check_user_state(user):
 
 
 def myreservations(request):
-    return render(request, 'myreservations.html')
+    return render(request, 'user-client-myreservations.html')
 
 
 def postsearch(request):
@@ -155,11 +155,14 @@ def static_page(request):
 
 
 def user(request):
-    return render(request, 'user.html')
+    return render(request, 'user-client-startpage.html')
 
 
-def user_changepassword(request):
-    return render(request, 'user_changepassword.html')
+def user_editlogin(request):
+    return render(request, 'user-client-editlogin.html')
+
+def user_editprofile(request):
+    return render(request, 'user-client-editprofile.html')
 
 def userownerstart(request):
     field_owner = MyUser.objects.get(id = request.user.id).fieldowner

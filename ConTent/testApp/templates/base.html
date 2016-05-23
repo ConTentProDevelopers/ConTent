@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="pl">
+<html lang="PL">
 <head>
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,7 @@
                         <div style="positon:fixed; padding: 15px 10px 10px 10px;">
                             <ul>
                                 {% if user.is_customer %}
-                                <li style="float:right"><a href="/user-client-startpage">{{user.first_name}} {{user.last_name}}</a> </li>
+                                <li style="float:right"><a href="/user">{{user.first_name}} {{user.last_name}}</a> </li>
                                 {% endif %}
                                 {% if user.is_field_owner %}
                                 <li style="float:right"><a href="/user-owner-startpage">{{user.first_name}} {{user.last_name}}</a> </li>
