@@ -15,7 +15,7 @@
             <div class="row">
                 {% for campsite in matched_campsites %}
               <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail" style="text-decoration: none">
+                <a href="/fieldsite/{{campsite.id}}" class="thumbnail" style="text-decoration: none">
                     <h3 align="center">{{campsite.field_name}}</h3>
                     <img src="{% static campsite.field_photo %}" >
                     <p align="center">{{campsite.field_locality}}</p>
