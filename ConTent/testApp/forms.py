@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.contrib.admin.widgets import AdminDateWidget
 from django import forms
 from .models import *
 
@@ -21,3 +22,10 @@ class FieldOwnerRegisterForm(forms.ModelForm):
         model = FieldOwner
         fields = ['company_name','company_NIP','company_REGON','company_postal_code','company_locality','company_address']
         exclude = ['account_validated']
+
+class ReservationForm(forms.ModelForm):
+    arrival_date = forms.DateField(label="Przyjazd")
+    departure_date = forms.DateField(label="Odjazd")
+    class Meta:
+        model = Reservation
+        fields=['arrival_date','departure_date']

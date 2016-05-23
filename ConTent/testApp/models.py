@@ -61,6 +61,20 @@ class MyUser(AbstractBaseUser):
     def has_module_perms(self, app_label):
         return True
 
+    def is_customer(self):
+        try:
+            self.customer
+        except:
+            return False
+        return True
+
+    def is_field_owner(self):
+        try:
+            self.fieldowner
+        except:
+            return False
+        return True
+
     @property
     def is_staff(self):
         return self.is_superuser
@@ -116,7 +130,7 @@ class Reservation(models.Model):
     id = models.AutoField(primary_key=True)
     arrival_date = models.DateField()
     departure_date = models.DateField()
-    hour_of_reservation = models.DateTimeField()
+    hour_of_reservation = models.DateTimeField(auto_now=False,auto_now_add=True)
     status = models.CharField(max_length=15)
 
     customer = models.ForeignKey(Customer)
