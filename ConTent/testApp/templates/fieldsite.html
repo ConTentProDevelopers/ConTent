@@ -1,33 +1,61 @@
+{% load staticfiles %}
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <div style="float:left;margin:20px">
-    <img src="images/placeholder.jpg" style="width:300px;height:300px">
+    <img src="{% static campsite.field_photo %}" style="width:300px;height:300px">
 </div>
 
 <div style="float:left;margin:20px">
-    <h1>Pole namiotowe "Agnieszka"</h1>
+    <h1>Pole namiotowe "{{campsite.field_name}}"</h1>
     <form>
-        <div style="font-size:30px;">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-            0/5
+        {% for i in rating_integral %}
+        <div style="font-size:30px;display:inline-block;position:relative;">
+            <span style="color:yellow;">&starf;</span>
+        </div>
+        {% endfor %}
+         <div style="font-size:30px;display:inline-block;position:relative;">
+            <span>&starf;</span>
+             <div style="font-size:30px;display:inline-block;overflow:hidden;position:absolute;top:0;left:0;width:{{star_width}}px;">
+                 <span style="color:yellow;">&starf;</span>
+             </div>
+            {{campsite.average_rating}} / 5
         </div>
 
         <h3>Udogodnienia</h3>
-        <input type="checkbox" disabled="disabled" checked="checked"> Stołówka<br>
-        <input type="checkbox" disabled="disabled" checked="checked"> Wifi<br>
-        <input type="checkbox" disabled="disabled" checked="checked"> Przysznic<br>
+        {% if convenience.canteen %}
+            <input type="checkbox" disabled="disabled" checked="checked"> Kantyna<br>
+        {% endif %}
+        {% if convenience.easy_access %}
+            <input type="checkbox" disabled="disabled" checked="checked"> Łatwy dojazd<br>
+        {% endif %}
+        {% if convenience.equipment_rental %}
+            <input type="checkbox" disabled="disabled" checked="checked"> Wypożyczalnia sprzętu<br>
+        {% endif %}
+        {% if convenience.parking %}
+            <input type="checkbox" disabled="disabled" checked="checked"> Parking<br>
+        {% endif %}
+        {% if convenience.shower %}
+            <input type="checkbox" disabled="disabled" checked="checked"> Prysznic<br>
+        {% endif %}
+        {% if convenience.wifi %}
+            <input type="checkbox" disabled="disabled" checked="checked"> Wifi<br>
+        {% endif %}
     </form>
 </div>
 
 <div style="float:left;margin-top:60px;position:static;">
     <button>Rezerwuje miejsce!</button>
     <br>
-    <button>Pokaż na mapie</button>
+    <a target="_blank" href="https://google.com/maps/place/{{campsite.field_address}}/" class="btn btn-primary">Pokaż na mapie</a>
 </div>
 
 <div style="float:left;">
 <h2>Opis</h2>
     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 </div>
+

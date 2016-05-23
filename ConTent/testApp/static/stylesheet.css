@@ -346,3 +346,8 @@ html body .container-fluid.body-content {
     font-size: 13px;
     text-align: center;
 }
+.normstar {
+    font-size:30px;
+    display:inline-block;
+    position:relative;
+}
