@@ -9,11 +9,12 @@ ul {
 li {
     float: left;
 }
+/* tekst w stopce */
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 9px 16px;
     text-decoration: none;
     font-family: 'Didact Gothic', sans-serif;
 
@@ -37,9 +38,19 @@ body {
 .mainTable{
     
 }
-.paragraft{
-    text-align: center;
-    font-family: 'Pacifico', cursive;
+
+.paragraft {
+        margin-top: 5%;
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+}
+
+@media screen and (max-width: 1366px) {
+    .paragraft {
+        margin-top: -3%;
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+    }
 }
 .divglowny{
     background-color: lightgrey;
@@ -58,7 +69,7 @@ body {
 
 .footer{
     background-color: #00001a;
-    height: 60px;  
+    height: 70px;
     width: 99.5%;
     align-items: center;
     vertical-align: top; 
@@ -287,7 +298,6 @@ button{
 }
 
 .conformation {
-    border: 1px solid black;
     width: 100%
 }
 
@@ -323,17 +333,18 @@ button{
 html body .container-fluid.body-content {
   position: absolute;
   top: 120px;
-  bottom: 100px;
+  bottom: 90px;
   right: 15px;
   left: 5px;
   overflow: hidden;
 }
 
 .jumbotron {
-    height: 100%;
+    height: 93%;
     position: relative;
     overflow: scroll;
-    overflow-x: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 
@@ -345,4 +356,101 @@ html body .container-fluid.body-content {
     color: red;
     font-size: 13px;
     text-align: center;
+}
+
+.thumbnail {
+    height: 37vh;
+}
+
+.fieldsite-image {
+    max-width: 550px;
+    max-height: 500px;
+    float:left;
+}
+
+.fieldsite-title {
+    position:relative;
+    float:left;
+    margin:20px;
+    top:-5%;
+}
+
+.fieldsite-button {
+    position:relative;
+    float:right;
+    top:0%;
+}
+
+.fieldsite-text {
+    float:left;
+    padding-bottom: 20px;
+}
+
+.title-field {
+    position:relative;
+    float:left;
+    font-size: 45px;
+    padding-top: 2%;
+}
+
+@media screen and (max-width: 1366px) {
+    .fieldsite-image {
+    max-width: 450px !important;
+    max-height: 400px !important;
+    float:left;
+}
+    .title-field {
+    position:relative;
+    float:left;
+    font-size: 40px;
+}
+    .fieldsite-button {
+    position:absolute;
+    float:right;
+        right:0%;
+        top:15%;
+}
+}
+
+input[type='checkbox'].tags-checkbox:checked + label > i:first-of-type,
+input[type='checkbox'].tags-checkbox + label > i:last-of-type{
+    display: none;
+}
+input[type='checkbox'].tags-checkbox:checked + label > i:last-of-type{
+    display: inline-block;
+}
+
+.new-order-header{
+    text-align: center;
+}
+
+.reservation-next-button{
+    float:right;
+    padding-top:3%;
+}
+
+.reservation-previous-button{
+    float:left;
+    padding-top:3%;
+}
+
+.reservation-field-width{
+    max-width: 300px;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    float: none;
+}
+
+.select-reservation{
+    max-width: 100px;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    float: none;
+}
+
+.header-conf{
+    text-align: center;
+    padding: 1%;
 }

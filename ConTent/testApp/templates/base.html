@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
-<body background="{% static 'images/tent.jpg' %}">
+<body background="{% static 'images/tent.jpg' %}" class="body">
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <table class="header">
@@ -38,7 +38,13 @@
         </div>
     </nav>
 
-{% block content %}{% endblock %}
+    <div class="container-fluid body-content">
+        <h3 class="jumbotron">
+
+        {% block content %}{% endblock %}
+
+        </h3>
+     </div>
 
     <div class="navbar navbar-fixed-bottom">
         <div class="container-fluid">

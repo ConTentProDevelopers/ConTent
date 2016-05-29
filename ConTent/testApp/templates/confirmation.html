@@ -1,38 +1,51 @@
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
 
-<h1>Potwierdzenie rezerwacji miejsc</h1>
+<div>
+<h2 class="header-conf">Potwierdzenie rezerwacji miejsc</h2>
 
-<table class="conformation">
-    <tr class="dane1">
+<table class="conformation table">
+    <tr class="dane1 success">
         <td>Nazwa pola</td>
         <td>"Pole namiotowe"</td> 
     </tr>
-    <tr>
+    <tr class="dane1 info">
         <td>Miejscowość</td>
         <td>Krynica</td> 
     </tr>
-    <tr class="dane1">
-        <td>Miejsca</td>
+    <tr class="dane1 success">
+        <td>Miejsca Namiotowe</td>
         <td>2</td> 
     </tr>
-    <tr>
+        <tr class="dane1 info">
+        <td>Miejsca Kampingowe</td>
+        <td>4</td>
+    </tr>
+    <tr class="dane1 success">
         <td>Rezerwacja na</td>
         <td>Adam Abacki</td> 
     </tr>
-     <tr class="dane1">
+     <tr class="dane1 info">
         <td>Data przybycia</td>
         <td>22.08.2016</td> 
     </tr>
-    <tr>
+    <tr class="dane1 success">
         <td>Data wyjazdu</td>
         <td>29.08.2016</td> 
     </tr>
+        <tr class="dane1 info">
+        <td>Kwota do zapłaty</td>
+        <td>1823zł</td>
+    </tr>
 </table>
 
-<div class="conformation-div">
-    <button>Edytuj</button>
-    <button>Anuluj</button>
-    <button>Zatwierdź</button>
-</div>
+    <div class="reservation-next-button">
+        <button class="btn btn-success btn-lg">Dalej</button>
+    </div>
+    <div class="reservation-previous-button">
+        <button class="btn btn-warning btn-lg">Powrót</button>
+    </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="{% static 'datepicker.css' %}">
+    <script>
+        $(document).ready(function() {
+
+            $(".datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '1800:2100'
+            });
+
+        })
+    </script>
+</head>
+
+<div>
+    <div class="form-group">
+    <div class="new-order-header">
+        <h2>Pole namiotowe "Agnieszka"</h2>
+        <h3>Wybierz datę pobytu</h3>
+        <p>Data przyjazdu: <input type="text" class="datepicker form-control reservation-field-width"></p>
+        <p>Data wyjazdu: <input type="text" class="datepicker form-control reservation-field-width"></p>
+    </div>
+    <div class="reservation-next-button">
+        <button class="btn btn-success btn-lg">Dalej</button>
+    </div>
+    <div class="reservation-previous-button">
+        <button class="btn btn-warning btn-lg">Powrót</button>
+    </div>
+        </div>
+</div>
+{% endblock %}

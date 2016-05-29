@@ -33,6 +33,14 @@ def confirmation(request):
     return render(request, 'confirmation.html')
 
 
+def newreservation(request):
+    return render(request, 'new-reservation.html')
+
+
+def newreservation2(request):
+    return render(request, 'new-reservation2.html')
+
+
 def error404(request):
     return render(request, 'error404.html')
 
