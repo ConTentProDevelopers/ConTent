@@ -117,7 +117,7 @@ h1{
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.btn-default.btn{
+.btn-search.btn{
     background-color: #fff;
     border: 2px solid black;
     float:left;
@@ -126,6 +126,12 @@ h1{
     font-size: 15px;
     text-align: center;
     margin: 3px 20px;
+}
+
+.btn-search.btn:hover{
+    color:#333;
+    background-color:#e6e6e6;
+    border-color:#adadad
 }
 
 .carousel{
@@ -264,11 +270,11 @@ button{
     
 }
 
-.user-content li{
+.user-content div{
     background-color: #fff;
-    border: 1px solid black;
+
     color: black;
-    padding: 15px;
+    padding-left: 20px;
     margin: 20px;
     font-size: 20px;
     list-style-type:none;
@@ -453,4 +459,10 @@ input[type='checkbox'].tags-checkbox:checked + label > i:last-of-type{
 .header-conf{
     text-align: center;
     padding: 1%;
+}
+
+.normstar {
+    font-size:30px;
+    display:inline-block;
+    position:relative;
 }

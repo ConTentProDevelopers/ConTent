@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="pl">
+<html lang="PL">
 <head>
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,9 +22,24 @@
                     <td>
                         <form method="get" action="/postsearch">
                             <input class="searchInput" placeholder="Podaj nazwę miejsocwości lub pola namiotowego" type="text" size="50" name="search">
-                            <button type="submit" class="btn btn-default">Wyszukaj</button>
+                            <button type="submit" class="btn btn-search">Wyszukaj</button>
                         </form>
                     </td>
+                    {% if user.is_authenticated %}
+                    <td align="right">
+                        <div style="positon:fixed; padding: 15px 10px 10px 10px;">
+                            <ul>
+                                {% if user.is_customer %}
+                                <li style="float:right"><a href="/user">{{user.first_name}} {{user.last_name}}</a> </li>
+                                {% endif %}
+                                {% if user.is_field_owner %}
+                                <li style="float:right"><a href="/user-owner-startpage">{{user.first_name}} {{user.last_name}}</a> </li>
+                                {% endif %}
+                                <li style="float:right"><a href="/logout_method">Wyloguj się</a> </li>
+                            </ul>
+                        </div>
+                    </td>
+                    {% else %}
                     <td align="right">
                         <div style="positon:fixed; padding: 15px 10px 10px 10px;">
                             <ul>
@@ -33,6 +48,7 @@
                             </ul>
                         </div>
                     </td>
+                    {% endif %}
                 </tr>
             </table>
         </div>

@@ -16,7 +16,7 @@
             <div class="item active">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="#"><img src="{% static active.field_photo %}" class="img-responsive"></a>
+                        <a href="/fieldsite/{{active.id}}"><img src="{% static active.field_photo %}" class="img-responsive"></a>
                         <div class="caption">
                             <h4>{{ active.field_name }}</h4>
                             <h4>{{ active.field_locality }}</h4>
@@ -28,7 +28,7 @@
             <div class="item">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="#"><img src="{% static campsite.field_photo %}" class="img-responsive"></a>
+                        <a href="/fieldsite/{{campsite.id}}"><img src="{% static campsite.field_photo %}" class="img-responsive"></a>
                         <div class="caption">
                             <h4>{{campsite.field_name}}</h4>
                             <h4>{{campsite.field_locality}}</h4>

@@ -1,42 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset = "utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
 
-<table>
-    <tr>
-        <td class="user-menu">
-            <button>Twoje dane</button> 
-            <button>Dodaj pole namiotowe</button>
-            <button>Pola namiotowe</button>
-            <button>Wyloguj</button>
-        </td>
-        <td class="user-content">
-            <div style="float:left;margin:20px">
-                <form>
-                    <h3>Imię</h3>
-                    <input  type="text" name="name">
-                    <h3>Nazwisko</h3>
-                    <input type="text" name="lastname">
-                    <h3>Miasto</h3>
-                    <input type="text" name="city">
-                </form>
+
+
+<body class="body">
+    <div class="container-fluid body-content">
+        <div class="jumbotron">
+            <div  class="btn-group-vertical" style="float: left; width: 20%">
+                <a href="/user" class="btn btn-default" role="button">Dane użytkownika </a>
+                <a href="/user-myreservations/" class="btn btn-default" role="button">Moje rezerwacje</a>
+                <a href="/user-editlogin" class="btn btn-default" role="button">Zmień dane logowania</a>
+                <a href="/logout_method" class="btn btn-default" role="button">Wyloguj</a>
             </div>
-            
-            <div style="float:left;margin:20px">
-                <form>
-                    <h3>Adres</h3>
-                    <input  type="text" name="address">
-                    <h3>Email</h3>
-                    <input type="text" name="email">
-                    <h3>Telefon</h3>
-                    <input type="text" name="phone">
-                    <br><br>
-                    <button>Zmień hasło</button><br><br>
-                    <button>Zapisz</button>
-                </form>
+            <div style="float: left; margin-left: 20px; width: 70%;">
+                <div class="panel panel-default">
+                    {% block client %}
+                    {% endblock %}
+                </div>
             </div>
-            
-        </td>
-        
-    </tr>
-</table>
+        </div>
+    </div>
+{% endblock %}
+</body>

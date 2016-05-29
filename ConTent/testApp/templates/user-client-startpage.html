@@ -1,33 +1,21 @@
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<!DOCTYPE html>
+{% extends 'user.html' %}
+{% load staticfiles %}
+{% block client %}
 
-<table>
-    <tr>
-        <td class="user-menu">
-            <button>Dane użytkownika</button> 
-            <button>Moje rezerwacje</button>
-            <button>Zmień dane logowania</button>
-            <button>Wyloguj</button>
-        </td>
-        <td class="user-content">
-            <h3>Moje dane</h3>
-            <div>
-                <form>
-                    <h2>Imię</h2>
-                    <p name="first_name">{{first_name}}</p>
-                    <h2>Nazwisko</h2>
-                    <p name="last_name">{{last_name}}</p>
-                    <h2>Telefon</h2>
-                    <p name="phone_number">{{phone_number}}</p>
-                    <br>
-                    <button>Edytuj</button>
-                </form>
-            </div>
-            
-            
-            
-        </td>
-        
-    </tr>
-</table>
+<body class="body">
+    <div class="panel-heading">Moje dane</div>
+    <div class="panel-body">
+        <form>
+            <p>Imię</p>
+            <h2 name="first_name">{{first_name}}</h2>
+            <p>Nazwisko</p>
+            <h2 name="last_name">{{last_name}}</h2>
+            <p>Telefon</p>
+            <h2 name="phone_number">{{phone_number}}</h2>
+            <br>
+            <a href="/user-editprofile" class="btn btn-primary">Edytuj</a>
+        </form>
+    </div>
+{% endblock %}
+</body>

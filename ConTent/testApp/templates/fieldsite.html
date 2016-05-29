@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <div class="fieldsite-image">
-    <img src="{% static 'images/tent1.jpg' %}" class="img-responsive">
+    <img src="{% static campsite.field_photo %}" class="img-responsive">
 </div>
 
 <div class="fieldsite-title">
-    <div class="title-field">Pole namiotowe "Agnieszka"</div>
+    <div class="title-field">Pole namiotowe "{{campsite.field_name}}"</div>
     <form>
         <div class="stars">
             <input class="star star-5" id="star-5" type="radio" name="star"/>
@@ -29,32 +29,65 @@
             <h3>0/5</h3>
         </div>
         <h2>Udogodnienia:</h2>
+        {% if convenience.canteen %}
         <input type='checkbox' id='checkbox-1' class='tags-checkbox sr-only'/>
         <label for='checkbox-1'>
             <i class='glyphicon glyphicon-unchecked'></i>
             <i class='glyphicon glyphicon-check'></i>
             <span class='label-content'>Stołówka</span>
         </label>
+        {% endif %}
+        {% if convenience.easy_access %}
         <br>
         <input type='checkbox' id='checkbox-2' class='tags-checkbox sr-only'/>
             <label for='checkbox-2'>
             <i class='glyphicon glyphicon-unchecked'></i>
             <i class='glyphicon glyphicon-check'></i>
-            <span class='label-content'>Wifi</span>
+            <span class='label-content'>Łatwy dojazd</span>
         </label>
+        {% endif %}
+        {% if convenience.equipment_rental %}
         <br>
         <input type='checkbox' id='checkbox-3' class='tags-checkbox sr-only'/>
             <label for='checkbox-3'>
             <i class='glyphicon glyphicon-unchecked'></i>
             <i class='glyphicon glyphicon-check'></i>
+            <span class='label-content'>Wypożyczalnia</span>
+        </label>
+        {% endif %}
+        {% if convenience.parking %}
+        <br>
+        <input type='checkbox' id='checkbox-4' class='tags-checkbox sr-only'/>
+            <label for='checkbox-3'>
+            <i class='glyphicon glyphicon-unchecked'></i>
+            <i class='glyphicon glyphicon-check'></i>
+            <span class='label-content'>Parking</span>
+        </label>
+        {% endif %}
+        {% if convenience.shower %}
+        <br>
+        <input type='checkbox' id='checkbox-5' class='tags-checkbox sr-only'/>
+            <label for='checkbox-3'>
+            <i class='glyphicon glyphicon-unchecked'></i>
+            <i class='glyphicon glyphicon-check'></i>
             <span class='label-content'>Prysznic</span>
         </label>
+        {% endif %}
+        {% if convenience.wifi %}
+        <br>
+        <input type='checkbox' id='checkbox-6' class='tags-checkbox sr-only'/>
+            <label for='checkbox-3'>
+            <i class='glyphicon glyphicon-unchecked'></i>
+            <i class='glyphicon glyphicon-check'></i>
+            <span class='label-content'>Wifi</span>
+        </label>
+       {% endif %}
     </form>
 </div>
 
 <div class="fieldsite-button">
     <button class="btn-success">Rezerwuje miejsce!</button><br><br>
-    <button class="btn-info">Pokaż na mapie</button>
+    <a target="_blank" href="https://google.com/maps/place/{{campsite.field_address}}/" class="btn-info">Pokaż na mapie</a>
 </div>
 
 

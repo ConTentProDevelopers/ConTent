@@ -1,98 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load staticfiles %}
+{% block content %}
 <head>
-       <meta charset = "utf-8">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
-<body class="body" img-style="position: fixed;">
-<table class="header">
-    <tr>
-        <td><a href="index.html"><div class="placeholder"></div></a>
-        </td>
-        <td >
-            <form>
-                <input class="searchInput" placeholder="Podaj nazwę miejsocwości lub pola namiotowego" type="text" size="50" name="search">
-                <a href="postsearch.html">
-                <p class="searchButton">Wyszukaj</p></a>
-            </form>
-        </td>
-        <td align="right">
-            <div style="positon:fixed; padding:10px;">
-                <ul>
-                <li style="float:right"><a href="register.html">Rejestracja</a> </li>
-                <li style="float:right"><a href="login.html">Zaloguj się</a> </li>
-            </ul>
-            </div>
-        </td>
-    </tr>
-</table>
-<div><p>'</p>
-</div>
 
-<table>
-    <tr style="background-color: grey;">
-        <td class="postSearch-menu">
-            <from>
-                <ul>
-                    <li><input type="checkbox">Prysznic</li>
-                    <li><input type="checkbox">Stołówka</li>
-                    <li><input type="checkbox">Parking</li>
-                    <li><input type="checkbox">Internet</li>
-                    <li>Maksymalna odległość od miejscości</li>
-                    <select style="max-width:90%;" name="maxDfromCity" >
-                        <option value="0km">0 km</option>
-                        <option value="5km">5 km</option>
-                        <option value="10km">10 km</option>
-                    </select>
-                </ul>
-            </from>
-                
-        </td>
-        <td style="background-color: green;">
-            <div class="results">
-                <div class="results-body">
-                    {% for campsite in matched_campsites %}
-                    <div class="results-item">
-                        <img src="{% static campsite.field_photo %}" width="150" height="150">
-                        <p class="results-item-title">{{campsite.field_name}}</p>
-                    </div>
-                    {% endfor %}
-                    <!--
-                    <div class="results-item">
-                        <img src="images/placeholder.jpg" width="150" height="150">
-                        <p class="results-item-title">Nazwa pola</p>
-                    </div>
-                    <div class="results-item">
-                        <img src="images/placeholder.jpg" width="150" height="150">
-                        <p class="results-item-title">Nazwa pola</p>
-                    </div>
-                    <div class="results-item">
-                        <img src="images/placeholder.jpg" width="150" height="150">
-                        <p class="results-item-title">Nazwa pola</p>
-                    </div>
-                    <div class="results-item">
-                        <img src="images/placeholder.jpg" width="150" height="150">
-                        <p class="results-item-title">Nazwa pola</p>
-                    </div>
-                    <div class="results-item">
-                        <img src="images/placeholder.jpg" width="150" height="150">
-                        <p class="results-item-title">Nazwa pola</p>
-                    </div>
-                    <div class="results-item">
-                        <img src="images/placeholder.jpg" width="150" height="150">
-                        <p class="results-item-title">Nazwa pola</p>
-                    </div>
-                    -->
-                </div>
+<body  class="body">
+    <div class="container-fluid body-content" style="margin-top: 25px;">
+        <div class="jumbotron">
+
+            <div class="row">
+                {% for campsite in matched_campsites %}
+              <div class="col-xs-6 col-md-3">
+                <a href="/fieldsite/{{campsite.id}}" class="thumbnail" style="text-decoration: none">
+                    <h3 align="center">{{campsite.field_name}}</h3>
+                    <img src="{% static campsite.field_photo %}" >
+                    <p align="center">{{campsite.field_locality}}</p>
+                </a>
+              </div>
+                {% endfor %}
             </div>
-        </td>
-    </tr>
-</table>
-<div class="footer">
-    <ul style="    margin-left: 400px; margin-right: 50px;">
-    <li><a href="static.html">Regulamin</a></li>
-    <li><a href="static.html">Polityka prywatności</a></li>
-    <li><a href="static.html">Dla właściceli</a></li>
-    <li><a href="static.html">Kontakt</a></li>
-</ul>
-</div>
+
+        </div>
+    </div>
+{% endblock %}
 </body>
