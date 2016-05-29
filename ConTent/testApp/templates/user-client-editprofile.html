@@ -1,51 +1,21 @@
-
 <!DOCTYPE html>
-{% extends 'base.html' %}
+{% extends 'user.html' %}
 {% load staticfiles %}
-{% block content %}
-<head>
-    <meta charset = "utf-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</head>
+{% block client %}
 
 <body class="body">
-    <div class="container-fluid body-content">
-        <div class="jumbotron">
-            <table>
-    <tr>
-        <td class="user-menu">
-            <button>Dane użytkownika</button>
-            <button>Moje rezerwacje</button>
-            <button>Zmień dane logowania</button>
-            <button>Wyloguj</button>
-        </td>
-        <td class="user-content">
-            <h3>Zmień swoje dane</h3>
-            <div>
-                <form>
-                    <h2>Imię</h2>
-                    <input  type="text" name="first_name">
-                    <h2>Nazwisko</h2>
-                    <input type="text" name="last_name">
-                    <h2>Telefon</h2>
-                    <input type="text" name="phone_number">
-                    <br><br>
-                    <button>Zapisz</button>
-                </form>
-            </div>
-
-
-
-        </td>
-
-    </tr>
-</table>
-        </div>
+    <div class="panel-heading">Edytuj moje dane</div>
+    <div class="panel-body">
+        <form>
+            <p>Imię</p>
+            <input class="form-control" name="first_name" value="{{first_name}}">{{first_name}}</input>
+            <p>Nazwisko</p>
+            <input class="form-control" name="last_name" value="{{last_name}}">{{last_name}}</input>
+            <p>Telefon</p>
+            <input class="form-control" name="phone_number" value="{{phone_number}}">{{phone_number}}</input>
+            <br><br>
+            <button class="btn btn-primary">Zapisz</button>
+        </form>
     </div>
 {% endblock %}
 </body>
-

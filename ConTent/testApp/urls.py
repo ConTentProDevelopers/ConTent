@@ -22,7 +22,9 @@ urlpatterns = [
     url(r'^user-editlogin/', views.user_editlogin, name='user_editlogin'),
     url(r'^user-editprofile/', views.user_editprofile, name='user_editprofile'),
     url(r'^user-myreservations/', views.myreservations, name='myreservations'),
+    url(r'^user-reservation/', views.single_reservation, name='single_reservation'),
     url(r'^user-owner-startpage/', views.userownerstart, name='user-owner-start'),
     url(r'^user-owner-addfield/', views.userowneraddfield, name='user-owner-addfield'),
+
 
 ]

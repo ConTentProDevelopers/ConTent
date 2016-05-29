@@ -133,6 +133,8 @@ def check_user_state(user):
 def myreservations(request):
     return render(request, 'user-client-myreservations.html')
 
+def single_reservation(request):
+    return render(request, 'user-client-reservation.html')
 
 def postsearch(request):
     search_text = request.GET.get('search')
@@ -181,21 +183,26 @@ def userowneraddfield(request):
 
 
 def register(request):
-    print("jolo")
     if(request.POST):
         customerForm = CustomerRegisterForm(request.POST)
+        owner = request.POST.get('owner',None)
+        #print(owner)
         if customerForm.is_valid():
-            # tworzę nowego użytkownika z formularza i zapisuję
             newUser = customerForm.save(commit=False)
             password = customerForm.cleaned_data.get('password')
             newUser.set_password(password)
             newUser.save()
 
-            # towrzę nowego klienta i przypisuje mu nowego użytkownika
-            newCustomer = Customer()
-            newCustomer.user = newUser
-            newCustomer.save()
-            return HttpResponseRedirect('/')
+            if owner is None:
+                newCustomer = Customer()
+                newCustomer.user = newUser
+                newCustomer.save()
+                return HttpResponseRedirect('/')
+            else:
+                newFieldOwner = FieldOwner()
+                newFieldOwner.user = newUser
+                newFieldOwner.save()
+                return HttpResponseRedirect('/')
     else:
         customerForm = CustomerRegisterForm()
     args = {}

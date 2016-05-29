@@ -106,7 +106,7 @@ h1{
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.btn-default.btn{
+.btn-search.btn{
     background-color: #fff;
     border: 2px solid black;
     float:left;
@@ -115,6 +115,12 @@ h1{
     font-size: 15px;
     text-align: center;
     margin: 3px 20px;
+}
+
+.btn-search.btn:hover{
+    color:#333;
+    background-color:#e6e6e6;
+    border-color:#adadad
 }
 
 .carousel{
