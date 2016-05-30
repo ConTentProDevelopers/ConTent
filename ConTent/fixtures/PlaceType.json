@@ -8,6 +8,210 @@
       "limit_of_places": 5,
       "number_of_places": 120,
       "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 2,
+    "fields": {
+      "campsite": 1,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 3,
+    "fields": {
+      "campsite": 2,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 4,
+    "fields": {
+      "campsite": 2,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 5,
+    "fields": {
+      "campsite": 3,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 6,
+    "fields": {
+      "campsite": 3,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 7,
+    "fields": {
+      "campsite": 4,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 8,
+    "fields": {
+      "campsite": 4,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 9,
+    "fields": {
+      "campsite": 5,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 10,
+    "fields": {
+      "campsite": 5,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 11,
+    "fields": {
+      "campsite": 6,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 12,
+    "fields": {
+      "campsite": 6,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 13,
+    "fields": {
+      "campsite": 7,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 14,
+    "fields": {
+      "campsite": 7,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 15,
+    "fields": {
+      "campsite": 8,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 16,
+    "fields": {
+      "campsite": 8,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
+      "price": 80.00
+    }
+  },
+  {
+    "model": "testApp.PlaceType",
+    "pk1": 17,
+    "fields": {
+      "campsite": 9,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce namiotowe",
+      "price": 12.00
+    }
+  },
+   {
+    "model": "testApp.PlaceType",
+    "pk1": 18,
+    "fields": {
+      "campsite": 9,
+      "dimension": 5.25,
+      "limit_of_places": 5,
+      "number_of_places": 120,
+      "place_type": "Miejsce kampingowe",
       "price": 80.00
     }
   }

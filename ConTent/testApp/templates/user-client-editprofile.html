@@ -5,15 +5,16 @@
 
 <div class="panel-heading">Edytuj moje dane</div>
 <div class="panel-body">
-    <form>
+    <form  action="" method="post">
+        {% csrf_token %}
         <p>Imię</p>
-        <input class="form-control" name="first_name" value="{{first_name}}">{{first_name}}</input>
+        <input class="form-control" name="first_name" value="{{user.first_name}}">
         <p>Nazwisko</p>
-        <input class="form-control" name="last_name" value="{{last_name}}">{{last_name}}</input>
+        <input class="form-control" name="last_name" value="{{user.last_name}}">
         <p>Telefon</p>
-        <input class="form-control" name="phone_number" value="{{phone_number}}">{{phone_number}}</input>
+        <input class="form-control" name="phone_number" value="{{user.phone_number}}">
         <br><br>
-        <button class="btn btn-primary">Zapisz</button>
-    </form>
+        <button type="submit" class="btn btn-primary">Zapisz</button>
+    </form >
 </div>
 {% endblock %}

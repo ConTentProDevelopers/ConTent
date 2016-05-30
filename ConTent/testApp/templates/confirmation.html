@@ -3,41 +3,41 @@
 {% load staticfiles %}
 {% block content %}
 
-<div>
+<form method="post" action="/confirm-reservation/">
+    {% csrf_token %}
 <h2 class="header-conf">Potwierdzenie rezerwacji miejsc</h2>
 
 <table class="conformation table">
     <tr class="dane1 success">
         <td>Nazwa pola</td>
-        <td>"Pole namiotowe"</td> 
+        <td>{{campsite.field_name}}</td>
     </tr>
     <tr class="dane1 info">
         <td>Miejscowość</td>
-        <td>Krynica</td> 
+        <td>{{campsite.field_locality}}</td>
     </tr>
+    {% for place in places_of_campsite %}
     <tr class="dane1 success">
-        <td>Miejsca Namiotowe</td>
-        <td>2</td> 
+        <td>{{place.place_type}}</td>
+        <td>{{place.reserved_spaces}}</td>
+         <input type="hidden" name="{{place.id}}" value={{place.reserved_spaces}}>
     </tr>
-        <tr class="dane1 info">
-        <td>Miejsca Kampingowe</td>
-        <td>4</td>
-    </tr>
+    {% endfor %}
     <tr class="dane1 success">
         <td>Rezerwacja na</td>
-        <td>Adam Abacki</td> 
+        <td>{{buyer.first_name}} {{buyer.last_name}}</td>
     </tr>
      <tr class="dane1 info">
         <td>Data przybycia</td>
-        <td>22.08.2016</td> 
+        <td>{{arrival}}</td>
     </tr>
     <tr class="dane1 success">
         <td>Data wyjazdu</td>
-        <td>29.08.2016</td> 
+        <td>{{departure}}</td>
     </tr>
         <tr class="dane1 info">
         <td>Kwota do zapłaty</td>
-        <td>1823zł</td>
+        <td>{{price}} zł</td>
     </tr>
 </table>
 
@@ -47,5 +47,8 @@
     <div class="reservation-previous-button">
         <button class="btn btn-warning btn-lg">Powrót</button>
     </div>
-    </div>
+    <input type="hidden" name="campsite_id" value={{campsite.id}}>
+    <input type="hidden" name="arrival" value={{arrival}}>
+    <input type="hidden" name="departure" value={{departure}}>
+    </form>
 {% endblock %}

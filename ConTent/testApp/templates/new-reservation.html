@@ -20,20 +20,23 @@
     </script>
 </head>
 
-<div>
+<form method="post" action="/reservation/new-reservation2/">
+    {% csrf_token %}
     <div class="form-group">
     <div class="new-order-header">
-        <h2>Pole namiotowe "Agnieszka"</h2>
+        <h3>{{message}}</h3>
+        <h2>Pole namiotowe {{campsite.field_name}}</h2>
         <h3>Wybierz datę pobytu</h3>
-        <p>Data przyjazdu: <input type="text" class="datepicker form-control reservation-field-width"></p>
-        <p>Data wyjazdu: <input type="text" class="datepicker form-control reservation-field-width"></p>
+        <p>Data przyjazdu: <input type="text" name="arrival_date" class="datepicker form-control reservation-field-width"></p>
+        <p>Data wyjazdu: <input type="text" name="departure_date" class="datepicker form-control reservation-field-width"></p>
+        <input type="hidden" name="campsite_id" value="{{campsite.id}}">
     </div>
     <div class="reservation-next-button">
-        <button class="btn btn-success btn-lg">Dalej</button>
+        <button type="submit" class="btn btn-success btn-lg">Dalej</button>
     </div>
     <div class="reservation-previous-button">
         <button class="btn btn-warning btn-lg">Powrót</button>
     </div>
         </div>
-</div>
+</form>
 {% endblock %}

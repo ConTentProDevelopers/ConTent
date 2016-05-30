@@ -3,30 +3,30 @@
 {% load staticfiles %}
 {% block content %}
 
-<div>
+<form method="post" action="/reservation/confirmation/">
+    {% csrf_token %}
     <div class="new-order-header">
         <h2>Pole namiotowe "Agnieszka"</h2>
         <h3>Wybierz miejsce:</h3>
         <div class="form-group">
-            <p>Miejsce namiotowe: 12zł<select class="form-control select-reservation" id="sel1"></p>
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            {% for place in places_of_campsite %}
+            <p>{{ place.place_type }}: {{ place.price }}zł<select name="{{place.id}}" class="form-control select-reservation" id="sel1">
+            {% for number in place.limit_of_places %}
+            <option>{{number}}</option>
+            {% endfor %}
             </select>
-            <p>Miejsce kampingowe: 140zł<select class="form-control select-reservation" id="sel2"></p>
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            </select>
+            </p>
+            {% endfor %}
         </div>
     </div>
     <div class="reservation-next-button">
-        <button class="btn btn-success btn-lg">Dalej</button>
+        <button type="submit" class="btn btn-success btn-lg">Dalej</button>
     </div>
     <div class="reservation-previous-button">
         <button class="btn btn-warning btn-lg">Powrót</button>
     </div>
-</div>
+    <input type="hidden" name="campsite_id" value="{{campsite_id}}">
+    <input type="hidden" name="arrival" value={{arrival}}>
+    <input type="hidden" name="departure" value={{departure}}>
+</form>
 {% endblock %}

@@ -11,10 +11,10 @@
         </td>
         <td class="user-content">
             <ul>
+                {% for reservation in reservations %}
                 <li>
-                    <!-- Propozycja 1 -->
                     <div>
-                        Pole namiotowe "Agnieszka" - Krynica
+                        Pole namiotowe "{{reservation.fieldOwner.campsite.field_name}}" - Krynica
                     </div>
                     <div>
                         2 miejsca 
@@ -29,7 +29,8 @@
                         <button>Pokaż na mapie</button>
                     </div>                    
                 </li>
-                <!-- Propozycja 2 -->
+                {% endfor %}
+                <!--
                 <li>
                     <div>
                         <h3>Pole namiotowe "Agnieszka" - Krynica</h3>
@@ -48,6 +49,7 @@
                         
                     </div>                    
                 </li>
+                -->
             </ul>
         </td>
         

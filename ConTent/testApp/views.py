@@ -9,6 +9,8 @@ from .models import *
 from .forms import *
 from django.core.context_processors import csrf
 from django.template import RequestContext
+from datetime import datetime
+from random import randrange
 # Create your views here.
 
 User = get_user_model()
@@ -38,35 +40,67 @@ def addfield(request):
 
 
 def confirmation(request):
-    return render(request, 'confirmation.html')
-    #arrival = request.POST.get("arrival_date")
-    #departure = request.POST.get("departure_date")
-    #customer = MyUser.objects.get(id=request.user.id).customer
-    #owner = MyUser.objects.get(id=request.user.id).fieldowner
-    #reservation = Reservation(arrival_date=arrival,departure_date=departure,
-              #                staus="pending",customer=customer,fieldOwner=owner)
-    #context={'reservation':reservation}
-    #return render(request, 'confirmation.html',RequestContext(request,context))
+
+    arrival = request.POST.get("arrival")
+    departure = request.POST.get("departure")
+    campsite_id = request.POST.get("campsite_id")
+    campsite = get_object_or_404(Campsite,id=campsite_id)
+    places_of_campsite = PlaceType.objects.filter(campsite=campsite)
+    for place in places_of_campsite:
+        place.reserved_spaces = request.POST.get(str(place.id))
+    buyer = MyUser.objects.get(id=request.user.id)
+    price = sum([(float(place.price) * float(place.reserved_spaces)) for place in places_of_campsite])
+    context={"campsite":campsite,"places_of_campsite":places_of_campsite,"arrival":arrival,
+             "departure":departure,"buyer":buyer,"price":price}
+    return render(request, 'confirmation.html',RequestContext(request,context))
 
 def confirm_reservation(request):
+    arrival = request.POST.get("arrival")
+    print (arrival)
+    arrival = "{2}-{0}-{1}".format(*arrival.split("/"))
+    departure = request.POST.get("departure")
+    departure = "{2}-{0}-{1}".format(*departure.split("/"))
+    campsite_id = request.POST.get("campsite_id")
+    campsite = get_object_or_404(Campsite,id=campsite_id)
+    buyer = MyUser.objects.get(id=request.user.id)
+    field_owner = campsite.field_owner
+    reservation = Reservation.objects.create(arrival_date=arrival,departure_date=departure,customer=buyer.customer,fieldOwner=field_owner,status="pending")
+    reservation.save()
+    places_of_campsite = PlaceType.objects.filter(campsite=campsite)
+    for place_type in places_of_campsite:
+        reserved_spaces = int(request.POST.get(str(place_type.id)))
+        for i in range(reserved_spaces):
+            o=Place.objects.create(placeType=place_type,reservation = reservation)
+            o.save()
+
+
+    return redirect("/user")
+
+@login_required(login_url="/login/")
+def newreservation(request,id):
+    campsite = get_object_or_404(Campsite,id=id)
+    context = {"campsite":campsite}
+    return render(request, 'new-reservation.html',RequestContext(request,context))
+
+@login_required(login_url="/login/")
+def newreservation2(request):
     arrival = request.POST.get("arrival_date")
     departure = request.POST.get("departure_date")
-    customer = MyUser.objects.get(id=request.user.id).customer
-    owner = MyUser.objects.get(id=request.user.id).fieldowner
-    reservation = Reservation(arrival_date=arrival,departure_date=departure,
-                              staus="pending",customer=customer,fieldOwner=owner)
-    reservation.save()
-    if request.user.is_customer():
-        return redirect("/user-client-startpage")
-    if request.user.is_field_owner():
-         return redirect("/user-owner-startpage")
-
-def newreservation(request):
-    return render(request, 'new-reservation.html')
-
-
-def newreservation2(request):
-    return render(request, 'new-reservation2.html')
+    arrival_date = datetime.strptime(request.POST.get("arrival_date"),"%m/%d/%Y")
+    departure_date = datetime.strptime(request.POST.get("departure_date"),"%m/%d/%Y")
+    campsite_id = request.POST.get("campsite_id")
+    campsite = get_object_or_404(Campsite,id=campsite_id)
+    if departure_date < arrival_date:
+        context = {"message":"wybrano złą date","campsite":campsite}
+        return render(request,"new-reservation.html",RequestContext(request,context))
+    places_of_campsite = PlaceType.objects.filter(campsite=campsite)
+    for place in places_of_campsite:
+        if place.number_of_places < place.limit_of_places:
+            place.limit_of_places = range(place.number_of_places+1)
+        else:
+            place.limit_of_places = range(place.limit_of_places+1)
+    context = {"arrival":arrival,"departure":departure,"places_of_campsite":places_of_campsite,"campsite_id":campsite_id}
+    return render(request, 'new-reservation2.html',RequestContext(request,context))
 
 
 def error404(request):
@@ -114,17 +148,24 @@ def login_user_form(request):
     if state != 'correct':
         return render_to_response('login.html', {'state': state, 'email': email}, RequestContext(request))
     login(request,user)
+    if request.GET.get("next"):
+        print ("tuuuutaj")
+        return redirect(request.GET.get("next"))
     if user.is_field_owner():
         return userownerstart(request)
     if user.is_customer():
         return userclientstart(request)
 
 def get_user(email, password):
+    # hacking begins here :<
     try:
-        user = authenticate(username=email, password=password)
-        # hacking begins here :<
-        if password!=MyUser.objects.get(email=email).password:
-            user=None
+        user = authenticate(username = email,password=password)
+        if user.password == "password":
+            if password!="password": #kacking fixtures
+                user=None
+        else:
+            if not user.check_password(password): #haxing quickfix panic much regret
+                user = None
     except:
         user = None
     return user
@@ -140,7 +181,13 @@ def check_user_state(user):
 
 
 def myreservations(request):
-    return render(request, 'user-client-myreservations.html')
+    user = MyUser.objects.get(id=request.user.id)
+    reservations = Reservation.objects.filter(customer = user.customer)
+    for r in reservations:
+        r.campsite = Campsite.objects.get(id = randrange(9) )
+    print (len(reservations))
+    context = {"reservations":reservations}
+    return render(request, 'user-client-myreservations.html',context)
 
 def single_reservation(request):
     return render(request, 'user-client-reservation.html')
@@ -166,15 +213,34 @@ def static_page(request):
 
 
 def user(request):
-    return render(request, 'user-client-startpage.html')
+    if request.user.is_customer():
+        return userclientstart(request)
+    return userownerstart(request)
 
 
 def user_editlogin(request):
-    return render(request, 'user-client-editlogin.html')
+    if not request.POST:
+        return render(request, 'user-client-editlogin.html',RequestContext(request))
+    password = request.POST.get("password")
+    password_confirmation = request.POST.get("password_confirmation")
+    if password != password_confirmation:
+        return render(request, 'user-client-editlogin.html',RequestContext(request))
+    request.user.email = request.POST.get("email")
+    request.user.set_password(request.POST.get("password"))
+    request.user.save()
+    return user(request)
+
 
 
 def user_editprofile(request):
-    return render(request, 'user-client-editprofile.html')
+    if not request.POST:
+        return render(request, 'user-client-editprofile.html',RequestContext(request))
+    request.user.first_name = request.POST.get("first_name")
+    request.user.last_name = request.POST.get("last_name")
+    request.user.phone_number = request.POST.get("phone_number")
+    request.user.save()
+    return user(request)
+
 
 
 def userownerstart(request):
@@ -219,7 +285,6 @@ def register(request):
     if(request.POST):
         customerForm = CustomerRegisterForm(request.POST)
         owner = request.POST.get('owner',None)
-        #print(owner)
         if customerForm.is_valid():
             newUser = customerForm.save(commit=False)
             password = customerForm.cleaned_data.get('password')

@@ -76,7 +76,8 @@
 </div>
 
 <div class="fieldsite-button">
-    <button class="btn-success btn-width-fieldsite">Rezerwuje miejsce!</button><br>
+    <button class="btn-success btn-width-fieldsite"
+    onclick="window.location.href='/reservation/new-reservation/{{campsite.id}}'">Rezerwuje miejsce!</button><br>
     <button class="btn-info btn-width-fieldsite"
             onclick="window.location.href='https://google.com/maps/place/{{campsite.field_address}}/'">
             Pokaż na mapie</button>
