@@ -34,14 +34,14 @@ label.star:before {
 
 .rating-avg {
     positon:relative;
-    margin-top: -12%;
-    padding-left:45%;
+    margin-top: -10.5%;
+    padding-left:40%;
 }
 
 @media screen and (max-width: 1366px) {
     .rating-avg {
     positon:relative;
-    margin-top: -14%;
-    padding-left:50%;
+    margin-top: -11.5%;
+    padding-left:45%;
 }
 }

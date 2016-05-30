@@ -1,14 +1,20 @@
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
 
 <table class="login">
     <tr align="center">
         <td >
             <h2>Skontaktuj się z nami</h2>
+            <p> W przypadku gdy nie pamiętasz na jaki adres e-mail zostało założone Twoje konto,
+                skontaktuj się z biurem Content.</p>
+            <span class="glyphicon glyphicon-envelope"></span>
             <a href="#">biuro@content.pl</a>
             <br>
-            <button>Powrót</button>
+            <button class="btn-default forbidden-button" onclick="window.location.href='/index'">Strona główna</button>
         </td>
     </tr>
 </table>
+
+{% endblock %}

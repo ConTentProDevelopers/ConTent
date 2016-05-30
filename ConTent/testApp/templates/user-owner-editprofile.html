@@ -1,52 +1,37 @@
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<!DOCTYPE html>
+{% extends 'user-owner.html' %}
+{% load staticfiles %}
+{% block client %}
 
-<table>
-    <tr>
-        <td class="user-menu">
-            <button>Dane użytkownika</button> 
-            <button>Dodaj pole namiotowe</button>
-            <button>Moje pola namiotowe</button>
-            <button>Zmień dane logowania</button>
-            <button>Wyloguj</button>
-        </td>
-        <td class="user-content">
-            
-            <h3>Zmień swoje dane</h3>
-            <form>
-                <div>
-                        <h2>Imię</h2>
-                        <input  type="text" name="first_name">
-                        <h2>Nazwisko</h2>
-                        <input type="text" name="last_name">
-                        <h2>Telefon</h2>
-                        <input type="text" name="phone_number">
-                 </div>
-                
-                <div>
-                        <h2>Firma</h2>
-                        <input  type="text" name="company_name">
-                        <h2>NIP</h2>
-                        <input type="text" name="company_NIP">
-                        <h2>REGON</h2>
-                        <input type="text" name="company_REGON">
-
-                 </div>
-                
-                <div>
-                        <h2>Miasto</h2>
-                        <input  type="text" name="company_locality">
-                        <h2>Adres</h2>
-                        <input type="text" name="company_address">
-                        <h2>Kod pocztowy</h2>
-                        <input type="text" name="company_postal_code">
-                        <br><br>
-                        <button>Zapisz</button>
-                 </div>
-             </form>            
-        
-        </td>
-        
-    </tr>
-</table>
+<div class="panel-heading">Edytuj moje dane</div>
+<div class="panel-body">
+    <form>
+        <div>
+            <p>Imię</p>
+            <input class="form-control" name="first_name" value="{{first_name}}">{{first_name}}</input>
+            <p>Nazwisko</p>
+            <input class="form-control" name="last_name" value="{{last_name}}">{{last_name}}</input>
+            <p>Telefon</p>
+            <input class="form-control" name="phone_number" value="{{phone_number}}">{{phone_number}}</input>
+        </div>
+        <div>
+            <p>Firma</p>
+            <input class="form-control" name="company_name" value="{{first_name}}"></input>
+            <p>NIP</p>
+            <input class="form-control" name="company_NIP" value="{{last_name}}"></input>
+            <p>REGON</p>
+            <input class="form-control" name="company_REGON" value="{{phone_number}}"></input>
+        </div>
+        <div>
+            <p>Miasto</p>
+            <input class="form-control" name="company_locality" value="{{first_name}}"></input>
+            <p>Adres</p>
+            <input class="form-control" name="company_address" value="{{last_name}}"></input>
+            <p>Kod-pocztowy</p>
+            <input class="form-control" name="company_postal_code" value="{{phone_number}}"></input>
+            <br><br>
+            <button class="btn btn-primary">Zapisz</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

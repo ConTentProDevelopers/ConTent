@@ -3,21 +3,19 @@
 {% load staticfiles %}
 {% block client %}
 
-<body class="body">
-    <div class="panel-heading">Moje rezerwacje</div>
-    <div class="panel-body">
-        <div class="panel panel-default" style="border: 1px solid #ccc">
-          <div class="panel-body">
-              <b>Pole namiotowe "Agnieszka" - Krynica</b>
-              <br>20.07.2016 - 30.07.2016
-              <br>2 miejsca - 120 zł
-                <div style="float: right;">
-                    <a href="/user-reservation" role="button" class="btn btn-primary">Informacje</a>
-                    <button class="btn btn-warning">Mapa</button>
-                    <button class="btn btn-danger">Odwołaj</button>
-                </div>
-          </div>
+<div class="panel-heading">Moje rezerwacje</div>
+<div class="panel-body">
+    <div class="panel panel-default" style="border: 1px solid #ccc">
+        <div class="panel-body">
+            <b>Pole namiotowe "Agnieszka" - Krynica</b>
+            <br>20.07.2016 - 30.07.2016
+            <br>2 miejsca - 120 zł
+            <div style="float: right;">
+                <a href="/user-reservation" role="button" class="btn btn-primary">Informacje</a>
+                <button class="btn btn-warning">Mapa</button>
+                <button class="btn btn-danger">Odwołaj</button>
+            </div>
         </div>
     </div>
+</div>
 {% endblock %}
-</body>

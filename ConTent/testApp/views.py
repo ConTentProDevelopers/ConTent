@@ -38,14 +38,15 @@ def addfield(request):
 
 
 def confirmation(request):
-    arrival = request.POST.get("arrival_date")
-    departure = request.POST.get("departure_date")
-    customer = MyUser.objects.get(id=request.user.id).customer
-    owner = MyUser.objects.get(id=request.user.id).fieldowner
-    reservation = Reservation(arrival_date=arrival,departure_date=departure,
-                              staus="pending",customer=customer,fieldOwner=owner)
-    context={'reservation':reservation}
-    return render(request, 'confirmation.html',RequestContext(request,context))
+    return render(request, 'confirmation.html')
+    #arrival = request.POST.get("arrival_date")
+    #departure = request.POST.get("departure_date")
+    #customer = MyUser.objects.get(id=request.user.id).customer
+    #owner = MyUser.objects.get(id=request.user.id).fieldowner
+    #reservation = Reservation(arrival_date=arrival,departure_date=departure,
+              #                staus="pending",customer=customer,fieldOwner=owner)
+    #context={'reservation':reservation}
+    #return render(request, 'confirmation.html',RequestContext(request,context))
 
 def confirm_reservation(request):
     arrival = request.POST.get("arrival_date")
@@ -171,13 +172,16 @@ def user(request):
 def user_editlogin(request):
     return render(request, 'user-client-editlogin.html')
 
+
 def user_editprofile(request):
     return render(request, 'user-client-editprofile.html')
+
 
 def userownerstart(request):
     field_owner = MyUser.objects.get(id = request.user.id).fieldowner
     context = {'campsites':Campsite.objects.filter(field_owner=field_owner)}
     return render(request, 'user-owner-startpage-myfields.html',RequestContext(request,context))
+
 
 def userclientstart(request):
     client = MyUser.objects.get(id = request.user.id).customer
@@ -186,8 +190,29 @@ def userclientstart(request):
                'phone_number':client.user.phone_number}
     return render(request, 'user-client-startpage.html',RequestContext(request,context))
 
+
 def userowneraddfield(request):
     return render(request, 'user-owner-fieldedit.html')
+
+
+def userownereditlogin(request):
+    return render(request, 'user-owner-editlogin.html')
+
+
+def userownereditprofile(request):
+    return render(request, 'user-owner-editprofile.html')
+
+
+def userownermyprofile(request):
+    return render(request, 'user-owner-myprofile.html')
+
+
+def userownerfieldedit(request):
+    return render(request, 'user-owner-fieldedit.html')
+
+
+def userownerfielinfo(request):
+    return render(request, 'user-owner-fieldinfo.html')
 
 
 def register(request):

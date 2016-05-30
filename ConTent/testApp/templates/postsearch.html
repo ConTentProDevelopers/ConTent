@@ -2,29 +2,20 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-<head>
-    <meta charset = "utf-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-</head>
 
-<body  class="body">
-    <div class="container-fluid body-content" style="margin-top: 25px;">
-        <div class="jumbotron">
-
-            <div class="row">
-                {% for campsite in matched_campsites %}
-              <div class="col-xs-6 col-md-3">
-                <a href="/fieldsite/{{campsite.id}}" class="thumbnail" style="text-decoration: none">
-                    <h3 align="center">{{campsite.field_name}}</h3>
-                    <img src="{% static campsite.field_photo %}" >
-                    <p align="center">{{campsite.field_locality}}</p>
-                </a>
-              </div>
-                {% endfor %}
-            </div>
-
-        </div>
+<div class="row">
+    {% for campsite in matched_campsites %}
+    <div class="col-xs-6 col-md-3">
+        <a href="/fieldsite/{{campsite.id}}" class="thumbnail thumbnail-search" style="text-decoration: none">
+            <img src="{% static campsite.field_photo %}" >
+            <h3 align="center">{{campsite.field_name}}</h3>
+            <p align="center">{{campsite.field_locality}}</p>
+        </a>
     </div>
+    {% endfor %}
+    {% if not matched_campsites %}
+    <h3 class="header-conf">Brak wyników wyszukiwania dla podanej frazy.</h3>
+    <img src="{% static 'images/tent_no_search_result.jpg' %}" class="thumbnail center-div">
+    {% endif %}
+</div>
 {% endblock %}
-</body>

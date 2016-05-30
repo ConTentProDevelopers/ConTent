@@ -209,9 +209,7 @@ h1{
 }
 
 .login{
-    padding: 100px;
     width: 100%;
-    background-color: white;
     align-content: center;
 }
 
@@ -368,6 +366,9 @@ html body .container-fluid.body-content {
     height: 37vh;
 }
 
+.thumbnail-search {
+    height: 40vh;
+}
 .fieldsite-image {
     max-width: 550px;
     max-height: 500px;
@@ -399,6 +400,16 @@ html body .container-fluid.body-content {
     padding-top: 2%;
 }
 
+.btn-width-fieldsite {
+    width:250px;
+    margin: 2px;
+}
+
+.login-bottom {
+    position:relative;
+    right:1.5%;
+}
+
 @media screen and (max-width: 1366px) {
     .fieldsite-image {
     max-width: 450px !important;
@@ -409,13 +420,34 @@ html body .container-fluid.body-content {
     position:relative;
     float:left;
     font-size: 40px;
+    padding-top: 0%;
 }
     .fieldsite-button {
     position:absolute;
     float:right;
-        right:0%;
-        top:15%;
+    right:0%;
+    top:57%;
 }
+    .thumbnail-search {
+    height: 45vh;
+}
+    .btn-width-fieldsite {
+    width:240px;
+}
+    .forbidden-image {
+        width:400px;
+        height:200px;
+    }
+
+    .forbidden-text {
+        font-size: 40px !important;
+    }
+
+    .login-bottom {
+    position:relative;
+    right:2.5%;
+}
+
 }
 
 input[type='checkbox'].tags-checkbox:checked + label > i:first-of-type,
@@ -465,4 +497,13 @@ input[type='checkbox'].tags-checkbox:checked + label > i:last-of-type{
     font-size:30px;
     display:inline-block;
     position:relative;
+}
+
+.center-div {
+    position: relative;
+    left:40%;
+}
+
+.forbidden-button {
+    margin:10px;
 }

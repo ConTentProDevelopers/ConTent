@@ -3,19 +3,17 @@
 {% load staticfiles %}
 {% block client %}
 
-<body class="body">
-    <div class="panel-heading">Edytuj moje dane</div>
-    <div class="panel-body">
-        <form>
-            <p>Imię</p>
-            <input class="form-control" name="first_name" value="{{first_name}}">{{first_name}}</input>
-            <p>Nazwisko</p>
-            <input class="form-control" name="last_name" value="{{last_name}}">{{last_name}}</input>
-            <p>Telefon</p>
-            <input class="form-control" name="phone_number" value="{{phone_number}}">{{phone_number}}</input>
-            <br><br>
-            <button class="btn btn-primary">Zapisz</button>
-        </form>
-    </div>
+<div class="panel-heading">Edytuj moje dane</div>
+<div class="panel-body">
+    <form>
+        <p>Imię</p>
+        <input class="form-control" name="first_name" value="{{first_name}}">{{first_name}}</input>
+        <p>Nazwisko</p>
+        <input class="form-control" name="last_name" value="{{last_name}}">{{last_name}}</input>
+        <p>Telefon</p>
+        <input class="form-control" name="phone_number" value="{{phone_number}}">{{phone_number}}</input>
+        <br><br>
+        <button class="btn btn-primary">Zapisz</button>
+    </form>
+</div>
 {% endblock %}
-</body>

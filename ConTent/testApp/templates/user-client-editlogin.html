@@ -3,19 +3,17 @@
 {% load staticfiles %}
 {% block client %}
 
-<body class="body">
-    <div class="panel-heading">Edytuj moje dane</div>
-    <div class="panel-body">
-        <form>
-            <p>Email</p>
-            <input class="form-control" name="first_name" value="{{email}}">{{email}}</input>
-            <p>Hasło</p>
-            <input class="form-control" name="last_name" type="password" value="{{password}}">{{password}}</input>
-            <p>Powtórz hasło</p>
-            <input class="form-control" name="phone_number" type="password" value="{{password}}">{{password}}</input>
-            <br><br>
-            <button class="btn btn-primary">Zapisz</button>
-        </form>
-    </div>
+<div class="panel-heading">Edytuj moje dane</div>
+<div class="panel-body">
+    <form>
+        <p>Email</p>
+        <input class="form-control" name="first_name" value="{{email}}">{{email}}</input>
+        <p>Hasło</p>
+        <input class="form-control" name="last_name" type="password" value="{{password}}">{{password}}</input>
+        <p>Powtórz hasło</p>
+        <input class="form-control" name="phone_number" type="password" value="{{password}}">{{password}}</input>
+        <br><br>
+        <button class="btn btn-primary">Zapisz</button>
+    </form>
+</div>
 {% endblock %}
-</body>

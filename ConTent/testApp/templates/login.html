@@ -2,55 +2,38 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-<head>
-    <meta charset = "utf-8">
-</head>
 
-<body class="body">
-    <div id="login">
-        <div class="container-fluid body-content">
-            <h3 class="jumbotron">
-                <p>{{ state }}</p>
-                <form class="form-horizontal" name="LoginForm" action="" method="post">
-                    {% csrf_token %}
-                    {% if next %}
-                        <input type="hidden" name="next" value="{{ next}}" />
-                    {% endif %}
-                    <p>Zaloguj się</p>
-                    <div class="control-group">
-                        <label class="control-label" for="email">Adres email</label>
-                        <div class="controls">
-                            <input  type="text" id="email" name="email">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="password">Hasło</label>
-                        <div class="controls">
-                            <input  type="text" id="password" name="password">
-                        </div>
-                    </div>
-                    <br><br>
-                    <a href="forgotpassword.html">Zapomniałem hasła</a>
-                    <br>
-                    <div class="control-group">
-                        <div class="controls">
-                            <button type="submit" class="btn">Zaloguj</button>
-                        </div>
-                    </div>
-                </form>
-                <div id="loginPlaceholder">
-                    <img src="{% static 'images/placeholder.jpg' %}" class="loginPicture" style="width:300px;height:300px">
-                    <p style="width:300px;  text-align: center;">Content</p>
-                    <p style="font-size:10px;width:300px;" >
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
+<table>
+    <tr>
+        <td width="50%">
+            <form class="form-horizontal" name="LoginForm" action="" method="post" role="form">
+                {% csrf_token %}
+                {% if next %}
+                    <input type="hidden" name="next" value="{{ next}}" />
+                {% endif %}
+                <h2 class="login-bottom">Zaloguj się</h2>
+                <div class="form-group">
+                    <label for="email">Adres email</label>
+                    <input  type="email" class="form-control" id="email" name="email" style="width:40%">
                 </div>
-            </h3>
-        </div>
-    </div>
+                <div class="form-group">
+                    <label for="password">Hasło</label>
+                    <input  type="password" class="form-control" id="password" name="password" style="width:40%">
+                </div>
+                <a href="/forgotpassword" class="login-bottom">Zapomniałem hasła</a>
+                <br>
+                <button type="submit" class="btn btn-default login-bottom">Zaloguj</button>
+            </form>
+        </td>
+        <td width="50%" align="center">
+            <div>
+                <img src="{% static 'images/placeholder.jpg' %}" style="width:300px;height:300px;">
+                <h3>Content</h3>
+                <p align="center" style="font-size:11px; " >
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+        </td>
+    </tr>
+</table>
 {% endblock %}
-</body>

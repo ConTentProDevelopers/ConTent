@@ -26,6 +26,9 @@ urlpatterns = [
     url(r'^user-reservation/', views.single_reservation, name='single_reservation'),
     url(r'^user-owner-startpage/', views.userownerstart, name='user-owner-start'),
     url(r'^user-owner-addfield/', views.userowneraddfield, name='user-owner-addfield'),
-
-
+    url(r'^user-owner-editlogin/', views.userownereditlogin, name='user-owner-editlogin'),
+    url(r'^user-owner-editprofile/', views.userownereditprofile, name='user-owner-editprofile'),
+    url(r'^user-owner-myprofile/', views.userownermyprofile, name='user-owner-myprofile'),
+    url(r'^user-owner-fieldedit/', views.userownerfieldedit, name='user-owner-fieldedit'),
+    url(r'^user-owner-fieldinfo/', views.userownerfielinfo, name='user-owner-fieldinfo'),
 ]

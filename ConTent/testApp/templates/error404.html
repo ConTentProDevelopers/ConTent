@@ -1,17 +1,18 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load staticfiles %}
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+{% block content %}
 
 <table class="login">
     <tr align="center">
         <td >
-            <h1>Zabłądziłeś?</h1>
-            <img src="images/404.png">
+            <h1 class="forbidden-text">Zabłądziłeś?</h1>
+            <img src="{% static 'images/404.png' %}" class="forbidden-image">
             <h3>Strona nie istnieje</h3>
             <a href="#">admin@content.pl</a>
             <br>
-            <button>Strona główna</button>
+            <button class="btn-info forbidden-button" onclick="window.location.href='/index'">Strona główna</button>
         </td>
     </tr>
 </table>
+{% endblock %}
