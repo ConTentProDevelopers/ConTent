@@ -327,10 +327,10 @@ button{
 .carousel-inner .next        { left:  25%; }
 .carousel-inner .prev		 { left: -25%; }
 .carousel-control 			 { width:  4%; }
-.carousel-control.right {background-image:none !important; color: black; padding: 8% 0% 10% 25%;}
+.carousel-control.right {background-image:none !important; color: black; padding: 8% 0% 10% 15%;}
 .carousel-control.right:focus {color:gray;}
 .carousel-control.right:hover {color:black;}
-.carousel-control.left  {background-image:none !important; color: black; padding: 8% 25% 10% 0%;}
+.carousel-control.left  {background-image:none !important; color: black; padding: 8% 15% 10% 0%;}
 .carousel-control.left:focus {color:gray;}
 .carousel-control.left:hover {color:black;}
 
@@ -506,4 +506,22 @@ input[type='checkbox'].tags-checkbox:checked + label > i:last-of-type{
 
 .forbidden-button {
     margin:10px;
+}
+
+.margin-right {
+    position:relative;
+    float:right;
+}
+
+.margin-around {
+    margin:1%;
+    margin-bottom:1% !important;
+}
+
+.no-border {
+    border-top:0px !important;
+}
+
+.half-of-width{
+    width:35% !important;
 }

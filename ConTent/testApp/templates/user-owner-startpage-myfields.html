@@ -7,9 +7,9 @@
 <table class="table table-striped">
     <tbody>
     {% for campsite in campsites %}
-    <tr>
-        <td> {{ campsite.field_name }}</td>
-        <td>
+    <tr class="no-border">
+        <td class="no-border"> {{ campsite.field_name }}</td>
+        <td class="margin-right no-border">
             <button class="btn btn-info">Edytuj</button>
             <button class="btn btn-primary">Informacje</button>
             <button class="btn btn-danger">Usuń</button>
@@ -17,6 +17,6 @@
     </tr>
     {% endfor %}
     </tbody>
-</table>
-<button class="btn btn-success">Dodaj nowe pole namiotowe</button><br>
+</table><br>
+<button class="btn btn-success margin-around">Dodaj nowe pole namiotowe</button><br>
 {% endblock %}
