@@ -132,8 +132,10 @@ class Reservation(models.Model):
     departure_date = models.DateField()
     hour_of_reservation = models.DateTimeField(auto_now=False,auto_now_add=True)
     status = models.CharField(max_length=15)
-
+    price = models.FloatField()
+    number_of_places = models.IntegerField()
     customer = models.ForeignKey(Customer)
+    campsite = models.ForeignKey(Campsite)
     fieldOwner = models.ForeignKey(FieldOwner)
 
 

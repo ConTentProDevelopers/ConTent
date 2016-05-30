@@ -50,11 +50,14 @@ def confirmation(request):
         place.reserved_spaces = request.POST.get(str(place.id))
     buyer = MyUser.objects.get(id=request.user.id)
     price = sum([(float(place.price) * float(place.reserved_spaces)) for place in places_of_campsite])
+    number_of_places = sum([int(place.reserved_spaces) for place in places_of_campsite])
     context={"campsite":campsite,"places_of_campsite":places_of_campsite,"arrival":arrival,
-             "departure":departure,"buyer":buyer,"price":price}
+             "departure":departure,"buyer":buyer,"price":price,"number_of_places":number_of_places}
     return render(request, 'confirmation.html',RequestContext(request,context))
 
 def confirm_reservation(request):
+    price = request.POST.get("price")
+    number_of_places = request.POST.get("number_of_places")
     arrival = request.POST.get("arrival")
     print (arrival)
     arrival = "{2}-{0}-{1}".format(*arrival.split("/"))
@@ -64,7 +67,9 @@ def confirm_reservation(request):
     campsite = get_object_or_404(Campsite,id=campsite_id)
     buyer = MyUser.objects.get(id=request.user.id)
     field_owner = campsite.field_owner
-    reservation = Reservation.objects.create(arrival_date=arrival,departure_date=departure,customer=buyer.customer,fieldOwner=field_owner,status="pending")
+    reservation = Reservation.objects.create(campsite=campsite,arrival_date=arrival,departure_date=departure,
+                                             customer=buyer.customer,fieldOwner=field_owner,status="pending",
+                                             price=price,number_of_places=number_of_places)
     reservation.save()
     places_of_campsite = PlaceType.objects.filter(campsite=campsite)
     for place_type in places_of_campsite:
@@ -183,9 +188,7 @@ def check_user_state(user):
 def myreservations(request):
     user = MyUser.objects.get(id=request.user.id)
     reservations = Reservation.objects.filter(customer = user.customer)
-    for r in reservations:
-        r.campsite = Campsite.objects.get(id = randrange(9) )
-    print (len(reservations))
+
     context = {"reservations":reservations}
     return render(request, 'user-client-myreservations.html',context)
 

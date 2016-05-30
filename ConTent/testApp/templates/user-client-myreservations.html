@@ -10,7 +10,7 @@
         <div class="panel-body">
             <b>Pole namiotowe "{{reservation.campsite.field_name}}" - {{reservation.campsite.field_locality}}</b>
             <br>{{reservation.arrival_date}} - {{reservation.departure_date}}
-            <br>2 miejsca - 120 zł
+            <br>{{reservation.number_of_places}} miejsca - {{reservation.price}} zł
             <div style="float: right;">
                 <a href="/user-reservation" role="button" class="btn btn-primary">Informacje</a>
                 <button class="btn btn-warning">Mapa</button>

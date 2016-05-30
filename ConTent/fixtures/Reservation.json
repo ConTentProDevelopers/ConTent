@@ -8,6 +8,9 @@
       "arrival_date": "2011-10-11",
       "departure_date": "2011-10-12",
       "hour_of_reservation": "2011-10-11 12:12",
+      "campsite":1,
+      "price":100,
+      "number_of_places":3,
       "status": ""
     }
   }
