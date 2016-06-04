@@ -261,7 +261,7 @@ def userclientstart(request):
 
 
 def userowneraddfield(request):
-    return render(request, 'user-owner-fieldedit.html')
+    return render(request, 'addfield.html')
 
 
 def userownereditlogin(request):

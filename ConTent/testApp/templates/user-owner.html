@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- want to push it really bad -->
+<div  class="btn-group-vertical" style="float: left; width: 20%">
+    <a href="/user-owner-myprofile" class="btn btn-default" role="button">Dane użytkownika </a>
+    <a href="/user" class="btn btn-default" role="button">Moje pola namiotowe</a>
+    <a href="/user-editlogin" class="btn btn-default" role="button">Zmień dane logowania</a>
+    <a href="/logout_method" class="btn btn-default" role="button">Wyloguj</a>
+</div>
+<div style="float: left; margin-left: 20px; width: 70%;">
+    <div class="panel panel-default">
+        {% block client %}
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}

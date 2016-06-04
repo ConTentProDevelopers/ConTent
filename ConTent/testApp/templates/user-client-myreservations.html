@@ -13,7 +13,7 @@
             <br>{{reservation.number_of_places}} miejsca - {{reservation.price}} zł
             <div style="float: right;">
                 <a href="/user-reservation" role="button" class="btn btn-primary">Informacje</a>
-                <button class="btn btn-warning">Mapa</button>
+                <button onclick="window.location.href='https://google.com/maps/place/{{reservation.campsite.field_address}}/'" class="btn btn-warning">Mapa</button>
                 <button class="btn btn-danger">Odwołaj</button>
             </div>
         </div>

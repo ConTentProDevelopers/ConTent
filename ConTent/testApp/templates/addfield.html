@@ -1,64 +1,154 @@
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<!DOCTYPE html>
+{% extends 'user-owner.html' %}
+{% load staticfiles %}
+{% block client %}
 
-<table>
-    <tr>
-        <td class="user-menu">
-            <button>Twoje dane</button> 
-            <button>Dodaj pole namiotowe</button>
-            <button>Pola namiotowe</button>
-            <button>Wyloguj</button>
-        </td>
-        <td class="user-content">
-            <div style="float:left;margin:20px">
-                <form>
-                    <h3>Nazwa pola</h3>
-                    <input  type="text" name="name">
-                    <h3>Miejscowość</h3>
-                    <input type="text" name="city">
-                    <h3>Adres</h3>
-                    <input type="text" name="address">
-                </form>
-            </div>
-            
-            <div style="float:left;margin:20px">
-                <form>
-                    <h3>Strona www</h3>
-                    <input  type="text" name="url">
-                    <h3>Email</h3>
-                    <input type="text" name="email">
-                    <h3>Telefon</h3>
-                    <input type="text" name="phone">
-                </form>
-            </div>
-            
-            <div style="float:left;margin:20px">
-                <form>
-                    <h3>Miejsca namiotowe</h3>
-                    <input type="number" name="quantity" min="1">
-                    <h3>Miejsca campingowe</h3>
-                    <input type="number" name="quantity" min="0">
-                    <h3>Udogodnienia</h3>
-                    <input type="checkbox" name="diner" value="yes"> Stołówka<br>
-                    <input type="checkbox" name="diner" value="yes"> Wifi<br>
-                    <input type="checkbox" name="diner" value="yes"> Przysznic<br>
-                </form>
-            </div>
-            
-            <div style="float:left;margin:20px">
-                <form>
-                    <h3>Opis</h3>
-                    <textarea rows="4" cols="100">Opis</textarea>
-                    <h3>Zdjecie</h3>
-                    <input type="file">
+<div class="panel-heading">Dodaj pole namiotowe</div>
+<div class="panel-body">
+    <table>
+        <tr>
+            <td>
+                <form role="form">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label>Nazwa pola</label>
+                                <input type="text" class="form-control" name="field_name">
+                            </div>
+                            <div class="form-group">
+                                <label>Strona</label>
+                                <input type="text" class="form-control" name="field_website">
+                            </div>
+                            <div class="form-group">
+                                <label>Telefon</label>
+                                <input type="text" class="form-control" name="field_phone_number">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" name="field_email">
+                            </div>
+                        </div>
+
+                      <div class="col-sm-3">
+                          <div>
+                              <div class="form-group">
+                                <label>Miasto</label>
+                                <input type="text" class="form-control" name="field_locality">
+                              </div>
+                              <div class="form-group">
+                                <label>Adres</label>
+                                <input type="text" class="form-control" name="field_address">
+                              </div>
+                              <div class="form-group">
+                                <label>Kod pocztowy</label>
+                                <input type="text" class="form-control" name="field_postal_code">
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div>
+                            <h2>Udogodnienia</h2>
+                            <input type='checkbox' id='checkbox-1' class='tags-checkbox sr-only'/>
+                            <label for='checkbox-1'>
+                                <i class='glyphicon glyphicon-unchecked'></i>
+                                <i class='glyphicon glyphicon-check'></i>
+                                <span class='label-content'>Stołówka</span>
+                            </label>
+                            <br>
+                            <input type='checkbox' id='checkbox-2' class='tags-checkbox sr-only'/>
+                            <label for='checkbox-2'>
+                                <i class='glyphicon glyphicon-unchecked'></i>
+                                <i class='glyphicon glyphicon-check'></i>
+                                <span class='label-content'>Wifi</span>
+                            </label>
+                            <br>
+                            <input type='checkbox' id='checkbox-3' class='tags-checkbox sr-only'/>
+                            <label for='checkbox-3'>
+                                <i class='glyphicon glyphicon-unchecked'></i>
+                                <i class='glyphicon glyphicon-check'></i>
+                                <span class='label-content'>Prysznic</span>
+                            </label>
+                            <br>
+                            <input type='checkbox' id='checkbox-4' class='tags-checkbox sr-only'/>
+                            <label for='checkbox-4'>
+                                <i class='glyphicon glyphicon-unchecked'></i>
+                                <i class='glyphicon glyphicon-check'></i>
+                                <span class='label-content'>Parking</span>
+                            </label>
+                            <br>
+                            <input type='checkbox' id='checkbox-5' class='tags-checkbox sr-only'/>
+                            <label for='checkbox-5'>
+                                <i class='glyphicon glyphicon-unchecked'></i>
+                                <i class='glyphicon glyphicon-check'></i>
+                                <span class='label-content'>Łatwy dojazd</span>
+                            </label>
+                            <br>
+                            <input type='checkbox' id='checkbox-6' class='tags-checkbox sr-only'/>
+                            <label for='checkbox-6'>
+                                <i class='glyphicon glyphicon-unchecked'></i>
+                                <i class='glyphicon glyphicon-check'></i>
+                                <span class='label-content'>Wypożyczalnia</span>
+                            </label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h2>Miejsca</h2>
+                        <div class="panel-group">
+                            <a data-toggle="collapse" href="#collapse1">Dodaj miejsca</a>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                  <table class="table table-striped">
+                                    <tbody>
+                                      <tr>
+                                          <div class="form-group">
+                                            <label>Typ miejsca</label>
+                                            <input type="text" class="form-control" name="place_type">
+                                           </div>
+                                          <div class="form-group">
+                                            <label>Cena</label>
+                                            <input type="text" class="form-control" name="price">
+                                           </div>
+                                          <div class="form-group">
+                                            <label>Rozmiar</label>
+                                            <input type="text" class="form-control" name="dimenson">
+                                           </div>
+                                          <div class="form-group">
+                                            <label>Ilość miejsc</label>
+                                            <input type="text" class="form-control" name="number_of_places">
+                                           </div>
+                                          <div class="form-group">
+                                            <label>Limit miejsc</label>
+                                            <input type="text" class="form-control" name="limit_of_place">
+                                           </div>
+                                      </tr>
+                                    <button class="btn btn-info">Dodaj miejsce</button>
+                                    </tbody>
+                                  </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div style="width:30%;" class="panel panel-info">
+                    <div class="panel-heading"><h2>Zdjęcie pola</h2></div>
+                    <div class="panel-body"><p name="field_photo"><img src=""></p></div>
+                    </div>
+                    <button style="float: left;" type="submit" name="field_photo" class="btn btn-info">Zmień</button>
                     <br>
-                    <button>Dodaj</button>
-                </form>
-            </div>
-            
-            
-        </td>
-        
-    </tr>
-</table>
+                         <div style="width:80%;">
+                            <h2>Opis pola</h2>
+                            <textarea  rows="10" cols="80">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+                            </textarea>
+                            <br><br>
+
+                            <button style="float: none;" class="btn btn-info">Zapisz</button>
+                      </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

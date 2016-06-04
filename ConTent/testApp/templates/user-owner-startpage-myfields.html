@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% extends 'user.html' %}
+{% extends 'user-owner.html' %}
 {% load staticfiles %}
 {% block client %}
 
@@ -7,16 +7,16 @@
 <table class="table table-striped">
     <tbody>
     {% for campsite in campsites %}
-    <tr>
-        <td> {{ campsite.field_name }}</td>
-        <td>
-            <button class="btn btn-info">Edytuj</button>
+    <tr class="no-border">
+        <td class="no-border"> {{ campsite.field_name }}</td>
+        <td class="margin-right no-border">
+            <button onclick="window.location.href='/user-owner-fieldedit'" class="btn btn-info">Edytuj</button>
             <button class="btn btn-primary">Informacje</button>
             <button class="btn btn-danger">Usuń</button>
         </td>
     </tr>
     {% endfor %}
     </tbody>
-</table>
-<button class="btn btn-success">Dodaj nowe pole namiotowe</button><br>
+</table><br>
+<button onclick="window.location.href='/user-owner-addfield'"class="btn btn-success margin-around">Dodaj nowe pole namiotowe</button><br>
 {% endblock %}
